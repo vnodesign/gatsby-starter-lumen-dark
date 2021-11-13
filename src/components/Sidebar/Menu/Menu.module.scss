@@ -1,0 +1,54 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+
+.menu {
+  @include margin-bottom(1);
+  overflow: auto;
+  white-space: nowrap;
+  &__list {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &Item {
+      padding: 0;
+      margin: 10px 0;
+
+      @include breakpoint-xs {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      @include breakpoint-sm {
+        display: block;
+      }
+
+      &Link {
+        font-size: $typographic-base-font-size;
+        color: $color-base;
+        font-weight: normal;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+        }
+
+        &Active {
+          color: rgba(0,0,0,0.9);
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        &Link {
+          color: var(--always-white) !important;
+  
+          &:hover,
+          &:focus,
+          &Active {
+            color: $color-primary !important;
+          }
+        }
+      }
+    }
+  }
+}
