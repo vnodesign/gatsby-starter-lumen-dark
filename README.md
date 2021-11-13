@@ -1,14 +1,6 @@
-![.github/screenshot.png](.github/screenshot.png)
-
-![Lighthouse](https://github.com/duyet/blog.duyet.net/workflows/Lighthouse/badge.svg?branch=master)
-![gh-pages](https://github.com/duyet/blog.duyet.net/workflows/gh-pages/badge.svg?branch=master)
-
-- Production: https://blog.duyet.net
-- Github Page Mirror: https://duyet.github.io/blog
-
-#### Access Locally
+## Access Locally
 ```
-$ git clone https://github.com/duyet/blog && cd blog
+$ git clone https://github.com/vnodesign/tuanducdesign.com && cd tuanducdesign.com
 $ yarn
 $ yarn develop
 ```
@@ -25,15 +17,12 @@ $ gatsby serve
     ├── pages
     └── posts
 └── static
-    ├── admin
     └── media
 └── src
     ├── assets
     │   └── scss
     │       ├── base
     │       └── mixins
-    ├── cms
-    │   └── preview-templates
     ├── components
     │   ├── Feed
     │   ├── Icon
@@ -63,7 +52,7 @@ Nature graphic by [Anna Bearne](https://www.behance.net/annabearne) from [Noun P
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2021 Van-Duyet Le
+Copyright (c) 2021 Tuan Duc Tran
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
