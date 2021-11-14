@@ -16,7 +16,7 @@ type Props = {
 };
 
 const TagTemplate = ({ data, pageContext }: Props) => {
-  const { url, author, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
     tag,
@@ -29,27 +29,9 @@ const TagTemplate = ({ data, pageContext }: Props) => {
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
-  const pathname = window.location.pathname;
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
       <Helmet>
-      <script type="application/ld+json">
-            {`{
-              "image":"${url}${author.photo}",
-              "publisher":{
-                 "@type":"Organization",
-                 "logo":{
-                    "@type":"ImageObject",
-                    "url":"${url}${author.photo}"
-                 }
-              },
-              "description":"${siteSubtitle}",
-              "headline":"${tag}",
-              "@type":"WebPage",
-              "url":"${url}${pathname}",
-              "@context":"https://schema.org"
-           }`}
-      </script>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="noindex, follow" />
       </Helmet>

@@ -7,29 +7,11 @@ import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
 
 const NotFoundTemplate = () => {
-  const { url, author, title, subtitle } = useSiteMetadata();
-  const pathname = window.location.pathname;
+  const { title, subtitle } = useSiteMetadata();
 
   return (
     <Layout title={`Not Found - ${title}`} description={subtitle}>
       <Helmet>
-      <script type="application/ld+json">
-            {`{
-              "image":"${url}${author.photo}",
-              "publisher":{
-                 "@type":"Organization",
-                 "logo":{
-                    "@type":"ImageObject",
-                    "url":"${url}${author.photo}"
-                 }
-              },
-              "description":"${subtitle}",
-              "headline":"Not Found",
-              "@type":"WebPage",
-              "url":"${url}${pathname}",
-              "@context":"https://schema.org"
-           }`}
-      </script>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="follow, noindex" />
       </Helmet>

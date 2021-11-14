@@ -16,7 +16,7 @@ type Props = {
 };
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
-  const { author, url, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
     currentPage,
@@ -33,29 +33,6 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
         <Helmet>
-          <script type="application/ld+json">
-            {`{
-                "image":"${url}${author.photo}",
-                "publisher":{
-                    "@type":"Organization",
-                    "logo":{
-                      "@type":"ImageObject",
-                      "url":"${url}${author.photo}"
-                    }
-                },
-                "description":"${siteSubtitle}",
-                "headline":"${siteTitle}",
-                "@type":"WebSite",
-                "sameAs":[
-                    "https://twitter.com/${author.contacts.twitter}",
-                    "https://www.facebook.com/${author.contacts.facebook}",
-                    "https://github.com/${author.contacts.github}"
-                ],
-                "url":"${url}",
-                "name":"${siteTitle}",
-                "@context":"https://schema.org"
-              }`}
-          </script>
           <meta property="og:type" content="website"/>
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         </Helmet>

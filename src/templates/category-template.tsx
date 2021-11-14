@@ -17,7 +17,7 @@ type Props = {
 };
 
 const CategoryTemplate = ({ data, pageContext }: Props) => {
-  const { url, author, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
     category,
@@ -30,29 +30,11 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
-  const pathname = window.location.pathname;
   gtagTrack('CategoryList', 'view', 'category_list');
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
       <Helmet>
-      <script type="application/ld+json">
-            {`{
-              "image":"${url}${author.photo}",
-              "publisher":{
-                 "@type":"Organization",
-                 "logo":{
-                    "@type":"ImageObject",
-                    "url":"${url}${author.photo}"
-                 }
-              },
-              "description":"${siteSubtitle}",
-              "headline":"${category}",
-              "@type":"WebPage",
-              "url":"${url}${pathname}",
-              "@context":"https://schema.org"
-           }`}
-      </script>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
