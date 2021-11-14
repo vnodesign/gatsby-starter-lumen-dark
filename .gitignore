@@ -2,3 +2,5 @@
 cloudflared
 node_modules
 .cache
+public
+.user.ini

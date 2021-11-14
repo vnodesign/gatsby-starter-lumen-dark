@@ -15,12 +15,12 @@ type Props = {
 
 const PostTemplate = ({ data }: Props) => {
   const { url, author, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { title: postTitle, description: postDescription = '', thumbnail, authorName, date, featured, priceCurrency, price, ratingValue, ratingCount, reviewCount, worstRating, bestRating } = data.markdownRemark.frontmatter;
+  const { title: postTitle, description: postDescription = '', thumbnail, authorName, date, fbCommentUrl, featured, priceCurrency, price, ratingValue, ratingCount, reviewCount, worstRating, bestRating } = data.markdownRemark.frontmatter;
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
   const thumbnailUrl = thumbnail;
-  const pathname = window.location.pathname;
   const authorpost = authorName;
   const datepost = date;
+  const posturl = fbCommentUrl;
   const showschema = featured || false;
   const schemaRatingPriceCurrency = priceCurrency || 0;
   const schemaRatingPrice = price || 0;
@@ -33,34 +33,6 @@ const PostTemplate = ({ data }: Props) => {
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} thumbnail={thumbnailUrl}>
       <Helmet>
-          <script type="application/ld+json">
-            {`{
-              "image":"${url}${thumbnailUrl}",
-              "publisher":{
-                 "@type":"Organization",
-                 "logo":{
-                    "@type":"ImageObject",
-                    "url":"${url}${author.photo}"
-                 },
-                 "name":"${authorpost}"
-              },
-              "description":"${metaDescription}",
-              "headline":"${postTitle}",
-              "dateModified":"${datepost}",
-              "@type":"BlogPosting",
-              "datePublished":"${datepost}",
-              "url":"${url}${pathname}",
-              "mainEntityOfPage":{
-                 "@type":"WebPage",
-                 "@id":"${url}${pathname}"
-              },
-              "author":{
-                 "@type":"Person",
-                 "name":"${authorpost}"
-              },
-              "@context":"https://schema.org"
-           }`}
-          </script>
           { showschema && (
           <script type="application/ld+json">
             {`{
@@ -73,7 +45,7 @@ const PostTemplate = ({ data }: Props) => {
               "@type": "Offer",
               "priceCurrency": "${schemaRatingPriceCurrency}",
               "price": "${schemaRatingPrice}",
-              "url": "${url}${pathname}"
+              "url": "${url}${posturl}"
             },
             "aggregateRating": {
               "@type": "AggregateRating",
