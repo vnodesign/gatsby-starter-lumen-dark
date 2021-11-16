@@ -30,7 +30,7 @@ module.exports = [
     ],
     selectorBlackList: [],
     replace: true,
-    mediaQuery: false,
+    mediaQuery: true,
     minPixelValue: 0
   }),
   autoprefixer()

@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Copyright = ({ copyright }: Props) => (
-  <div className={styles['copyright']}>{copyright}</div>
+  <div className={styles['copyright']} itemScope="itemscope" itemType="https://schema.org/WPFooter"><span itemProp="copyrightHolder" itemScope="itemscope" itemType="https://schema.org/Organization">{copyright}</span></div>
 );
 
 export default Copyright;

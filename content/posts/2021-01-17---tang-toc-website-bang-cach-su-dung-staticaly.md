@@ -20,11 +20,11 @@ Theo mình tìm hiểu thì Staticaly khá hay khi sử dụng nó bạn sẽ c�
 
 ![Tăng Tốc Website Bằng Cách Sử Dụng Staticaly](/images/tang-toc-website-bang-cach-su-dung-staticaly.jpg)
 
-Trang chủ Staticaly: [https://statically.io](https://statically.io)
-
 - [Staticaly là gì](#staticaly-là-gì)
 - [Cách ứng dụng Staticaly vào Website](#cách-ứng-dụng-staticaly-vào-website)
 - [Tận hưởng thành quả mà Staticaly đem lại](#tận-hưởng-thành-quả-mà-staticaly-đem-lại)
+
+Trang chủ Staticaly: [https://statically.io](https://statically.io)
 
 ## Staticaly là gì
 
@@ -33,7 +33,7 @@ Staticaly là một trang hoàn toàn miễn phí nó giúp bạn đẩy các fi
 Ví dụ như các ảnh thumb ở ngoài trang chủ trên website của mình.
 
 ```html
-<images src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/images/tang-toc-website-bang-cach-su-dung-staticaly.jpg"/>
+<img src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/images/tang-toc-website-bang-cach-su-dung-staticaly.jpg"/>
 ```
 
 Bất cứ URL ảnh nào bạn chỉ cần nhập vào thông tin trên website của họ là bạn sẽ nhận lại được URL sản phẩm của bạn.

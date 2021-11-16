@@ -30,6 +30,10 @@ ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng
 
 Để hiểu rõ hơn về Module PageSpeed các bạn tìm hiểu tại trang sau: [https://developers.google.com/speed/pagespeed/module](https://developers.google.com/speed/pagespeed/module)
 
+- [Đăng nhập vào SSH](#đăng-nhập-vào-ssh)
+- [Chạy các lệnh cơ bản để kiểm tra hệ thống](#chạy-các-lệnh-cơ-bản-để-kiểm-tra-hệ-thống)
+- [Tiến hành cài đặt Server, Nginx và Module PageSpeed](#tiến-hành-cài-đặt-server-nginx-và-module-pagespeed)
+
 Trước khi cài đặt Module PageSpeed trên máy chủ Nginx thì các bạn cần phải chuẩn bị những thứ sau đây:
 
 - VPS mới tinh.
@@ -37,10 +41,6 @@ Trước khi cài đặt Module PageSpeed trên máy chủ Nginx thì các bạn
 - 20GB đến 50GB DISK nếu cần thiết.
 - 1 CORE đến 2 CORE tuỳ vào hệ thống của bạn.
 - Hệ điều hành CentOS 6 hoặc 7.
-
-- [Đăng nhập vào SSH](#đăng-nhập-vào-ssh)
-- [Chạy các lệnh cơ bản để kiểm tra hệ thống](#chạy-các-lệnh-cơ-bản-để-kiểm-tra-hệ-thống)
-- [Tiến hành cài đặt Server, Nginx và Module PageSpeed](#tiến-hành-cài-đặt-server-nginx-và-module-pagespeed)
 
 ## Đăng nhập vào SSH
 

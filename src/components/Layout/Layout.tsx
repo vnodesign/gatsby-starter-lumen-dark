@@ -52,8 +52,8 @@ const Layout = ({ children, title, subtitle, description, thumbnail = '' }: Prop
                 "url":"${url}",
                 "name":"${title}",
                 "@context":"https://schema.org"
-              }`}
-          </script>
+            }`}
+         </script>
     </Helmet>
     {children}
   </div>
