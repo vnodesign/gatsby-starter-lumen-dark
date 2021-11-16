@@ -20,7 +20,7 @@ const Author = ({ author, isIndex }: Props) => (
     </Link>
 
     {isIndex === true ? (
-      <h1 className={styles['author__title']} onClick={() => gtagTrack('Sidebar_Author', 'click', 'AuthorName_Index')}>
+      <h1 className={styles['author__title']} onClick={() => gtagTrack('Sidebar_Author', 'click', 'AuthorName_Index')} itemProp="name">
         <Link className={styles['author__titleLink']} to="/" title={author.name}>{author.name}</Link>
       </h1>
     ) : (
@@ -30,7 +30,7 @@ const Author = ({ author, isIndex }: Props) => (
     )}
     <p className={styles['author__subtitle']}
       onClick={() => gtagTrack('Sidebar_Author', 'click', 'AuthorBio')}
-      dangerouslySetInnerHTML={{ __html: author.bio }}></p>
+      dangerouslySetInnerHTML={{ __html: author.bio }} itemProp="description"></p>
   </div>
 );
 

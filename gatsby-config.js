@@ -148,7 +148,7 @@ module.exports = {
         short_name: siteConfig.title,
         start_url: '/',
         background_color: '#FFF',
-        theme_color: '#F7A046',
+        theme_color: '#fe2c55',
         display: 'standalone',
         icon: 'static/tuanducdesign.jpg',
         cache_busting_mode: 'none',

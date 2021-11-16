@@ -125,7 +125,7 @@ Với JS:
 Với images:
 
 ```html
-<images src="https://cdn.staticaly.com/gh/tuanducdesign/cdn.tuanducdesign.com/main/assets/images/tuanducdesign.jpg">
+<img src="https://cdn.staticaly.com/gh/tuanducdesign/cdn.tuanducdesign.com/main/assets/images/tuanducdesign.jpg">
 ```
 
 Với Fonts bạn chèn vào file css tương ứng của Fonts đó:

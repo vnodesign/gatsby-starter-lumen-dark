@@ -35,11 +35,11 @@ export default class FacebookComment extends React.PureComponent {
     return (
       <FacebookProvider appId={appId}>
           {fbCommentUrl
-            ? <Comments href={fbCommentUrl} numPosts={100} mobile={true} lazy={true} />
+            ? <Comments href={fbCommentUrl} numPosts={100} mobile={true} />
             : (
               <>
-                <Comments href={url} numPosts={100} mobile={true} lazy={true} />
-                <Comments href={url.replace('http://', 'https://')} numPosts={100} mobile={true} lazy={true} />
+                <Comments href={url} numPosts={100} mobile={true} />
+                <Comments href={url.replace('http://', 'https://')} numPosts={100} mobile={true} />
               </>
             )}
       </FacebookProvider>

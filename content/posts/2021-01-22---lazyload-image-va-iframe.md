@@ -67,7 +67,7 @@ Tiếp theo bạn chèn vào mã nguồn
     </head>
     <body>
     .
-    <images src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/images/lazyload-image-va-iframe.jpg" />
+    <img src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/images/lazyload-image-va-iframe.jpg" />
     <script src="https://cdn.staticaly.com/gh/aFarkas/lazysizes/gh-pages/lazysizes.min.js" async defer></script>
     </body>
 </html>
@@ -85,7 +85,7 @@ Tiếp theo bạn chèn vào mã nguồn
     </head>
     <body>
     .
-    <images src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/images/lazyload-image-va-iframe.jpg" />
+    <img src="https://cdn.staticaly.com/gh/tuanducteam/blog/master/static/images/lazyload-image-va-iframe.jpg" />
     <script src="https://cdn.staticaly.com/gh/aFarkas/lazysizes/gh-pages/lazysizes.min.js" async defer></script>
     <script>$("images").each(function(){$(this).attr("src",$(this).attr("src").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")}),$("source").each(function(){$(this).attr("srcset",$(this).attr("srcset").replace("http://","https://")),$(this).addClass("lazyload"),$(this).attr("data-srcset",$(this).attr("srcset")),$(this).removeAttr("srcset")}),$("iframe").each(function(){$(this).addClass("lazyload"),$(this).attr("data-src",$(this).attr("src")),$(this).removeAttr("src")});</script>
     </body>

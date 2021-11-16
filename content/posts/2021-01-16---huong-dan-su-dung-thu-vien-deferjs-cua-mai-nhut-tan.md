@@ -33,8 +33,6 @@ Tình cờ mình tìm được một thư viện khá hay của bác Mai Nhựt 
 
 ![Hướng Dẫn Sử Dụng Thư Viện DeferJS của Mai Nhựt Tân](/images/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg)
 
-Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: [https://github.com/shinsenter/defer.js](https://github.com/shinsenter/defer.js)
-
 - [Bắt đầu](#bắt-đầu)
 - [Chuyển type="text/javascript" sang type="deferjs"](#chuyển-typetextjavascript-sang-typedeferjs)
 - [Tiến hành lazyload ảnh và video](#tiến-hành-lazyload-ảnh-và-video)
@@ -59,6 +57,8 @@ Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: [https:/
 - [Support for old browsers (IE9)](#truy-cập-vào-bảng-quản-trị)
 - [Truy cập vào bảng quản trị](#truy-cập-vào-bảng-quản-trị)
 - [Với Laravel](#với-laravel)
+
+Trang chủ thư viện DeferJS trên kho GitHub của Mai Nhựt Tân: [https://github.com/shinsenter/defer.js](https://github.com/shinsenter/defer.js)
 
 ## Bắt đầu
 
@@ -118,14 +118,14 @@ Bạn có thể sử dụng Công cụ dành cho nhà phát triển của trình
 
 ## Tiến hành lazyload ảnh và video
 
-Cách sử dụng cơ bản: Lazyload tất cả các thẻ `<images>` có class là `lazy`
+Cách sử dụng cơ bản: Lazyload tất cả các thẻ `<img>` có class là `lazy`
 
 ```html
 <script>Defer.dom('images.lazy');</script>
 <!-- Here may be a very long content -->
-<images class="lazy" alt="Photo 1" data-src="https://picsum.photos/200/300?random=1" width="200" height="300" />
-<images class="lazy" alt="Photo 2" data-src="https://picsum.photos/200/300?random=2" width="200" height="300" />
-<images class="lazy" alt="Photo 3" data-src="https://picsum.photos/200/300?random=3" width="200" height="300" />
+<img class="lazy" alt="Photo 1" data-src="https://picsum.photos/200/300?random=1" width="200" height="300" />
+<img class="lazy" alt="Photo 2" data-src="https://picsum.photos/200/300?random=2" width="200" height="300" />
+<img class="lazy" alt="Photo 3" data-src="https://picsum.photos/200/300?random=3" width="200" height="300" />
 ```
 
 Cách sử dụng cơ bản: Lazyload hình nền của thẻ div.
@@ -148,14 +148,14 @@ Cách sử dụng cơ bản: Lazyload hình nền của thẻ div.
 </div>
 ```
 
-Cách sử dụng nâng cao: Trì hoãn Lazyload thẻ `<images>` 200ms sau khi trang đã tải xong. Sau đó, nó sẽ thêm một class `loaded` vào phần tử hình ảnh được tải lazyload.
+Cách sử dụng nâng cao: Trì hoãn Lazyload thẻ `<img>` 200ms sau khi trang đã tải xong. Sau đó, nó sẽ thêm một class `loaded` vào phần tử hình ảnh được tải lazyload.
 
 ```html
 <script>Defer.dom('images.lazy-extra', 200, 'loaded');</script>
 <!-- Here may be a very long content -->
-<images class="lazy-extra" alt="Photo 1" data-src="https://picsum.photos/200/300?random=4" width="200" height="300" />
-<images class="lazy-extra" alt="Photo 2" data-src="https://picsum.photos/200/300?random=5" width="200" height="300" />
-<images class="lazy-extra" alt="Photo 3" data-src="https://picsum.photos/200/300?random=6" width="200" height="300" />
+<img class="lazy-extra" alt="Photo 1" data-src="https://picsum.photos/200/300?random=4" width="200" height="300" />
+<img class="lazy-extra" alt="Photo 2" data-src="https://picsum.photos/200/300?random=5" width="200" height="300" />
+<img class="lazy-extra" alt="Photo 3" data-src="https://picsum.photos/200/300?random=6" width="200" height="300" />
 ```
 
 Sử dụng nâng cao: Lazyload với [Intersection observer options](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options)
@@ -168,9 +168,9 @@ Sử dụng nâng cao: Lazyload với [Intersection observer options](https://de
   });
 </script>
 <!-- Here may be a very long content -->
-<images class="lazy-sooner" alt="Photo 1" data-src="https://picsum.photos/200/300?random=7" width="200" height="300" />
-<images class="lazy-sooner" alt="Photo 2" data-src="https://picsum.photos/200/300?random=8" width="200" height="300" />
-<images class="lazy-sooner" alt="Photo 3" data-src="https://picsum.photos/200/300?random=9" width="200" height="300" />
+<img class="lazy-sooner" alt="Photo 1" data-src="https://picsum.photos/200/300?random=7" width="200" height="300" />
+<img class="lazy-sooner" alt="Photo 2" data-src="https://picsum.photos/200/300?random=8" width="200" height="300" />
+<img class="lazy-sooner" alt="Photo 3" data-src="https://picsum.photos/200/300?random=9" width="200" height="300" />
 ```
 
 Chúng ta có thể sử dụng class CSS đã thêm vào phần tử được lazyload để thêm hoạt ảnh vào các phần tử được tải thành công.
@@ -188,9 +188,9 @@ Chúng ta có thể sử dụng class CSS đã thêm vào phần tử được l
   }
 </style>
 <!-- Here may be a very long content -->
-<images class="fade" alt="Photo 1" data-src="https://picsum.photos/200/300?random=10" width="200" height="300" />
-<images class="fade" alt="Photo 2" data-src="https://picsum.photos/200/300?random=11" width="200" height="300" />
-<images class="fade" alt="Photo 3" data-src="https://picsum.photos/200/300?random=12" width="200" height="300" />
+<img class="fade" alt="Photo 1" data-src="https://picsum.photos/200/300?random=10" width="200" height="300" />
+<img class="fade" alt="Photo 2" data-src="https://picsum.photos/200/300?random=11" width="200" height="300" />
+<img class="fade" alt="Photo 3" data-src="https://picsum.photos/200/300?random=12" width="200" height="300" />
 ```
 
 Chức năng này có thể được sử dụng tương tự cho các thẻ khác như thẻ `<iframe>`,`<video>`,`<audio>`,`<picture>`
@@ -209,7 +209,7 @@ Chức năng này có thể được sử dụng tương tự cho các thẻ kh�
 <picture class="multi-lazy">
   <source uploads="(min-width:800px)" data-srcset="https://picsum.photos/800/1200">
   <source uploads="(min-width:600px)" data-srcset="https://picsum.photos/600/900">
-  <images data-src="https://picsum.photos/200/300" alt="Photo" style="width:auto;">
+  <img data-src="https://picsum.photos/200/300" alt="Photo" style="width:auto;">
 </picture>
 <audio class="multi-lazy" controls>
   <source data-src="sound.ogg" type="audio/ogg">
@@ -542,14 +542,14 @@ Thêm thuộc tính `data-ignore` vào phần tử mà bạn không muốn thư 
 <script data-ignore>var MY_IMPORTANT_VARIABLE = 'important value';</script>
 
 <!-- Example for add data-ignore for an images tag -->
-<images data-ignore src="my_photo.jpeg" alt="Awesome photo" />
+<img data-ignore src="my_photo.jpeg" alt="Awesome photo" />
 ```
 
-Thêm thuộc tính `data-nolazy` vào phần tử mà bạn không muốn thư viện tải nó một cách chậm rãi. Các tối ưu hóa khác cho phần tử đó sẽ vẫn được áp dụng ngoại trừ lazy-load. Thuộc tính này có thể được sử dụng cho tất cả `<images>`, `<picture>`, `<video>`, `<audio>`, `<iframe>` và cả thành phần `<link rel="stylesheet">`.
+Thêm thuộc tính `data-nolazy` vào phần tử mà bạn không muốn thư viện tải nó một cách chậm rãi. Các tối ưu hóa khác cho phần tử đó sẽ vẫn được áp dụng ngoại trừ lazy-load. Thuộc tính này có thể được sử dụng cho tất cả `<img>`, `<picture>`, `<video>`, `<audio>`, `<iframe>` và cả thành phần `<link rel="stylesheet">`.
 
 ```html
 <!-- Example for add data-nolazy for an images tag -->
-<images data-nolazy src="my_photo.jpeg" alt="Awesome photo" />
+<img data-nolazy src="my_photo.jpeg" alt="Awesome photo" />
 ```
 
 #### Stylesheets và JavaScript

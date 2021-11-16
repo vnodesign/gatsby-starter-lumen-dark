@@ -20,7 +20,7 @@ type Props = {
   const { tags, title, date, authorName, fbCommentUrl, category } = post.frontmatter;
 
   return (
-    <div className={styles.post}>
+    <article className={styles.post} itemScope itemType="http://schema.org/Article">
       <Link className={styles["post__homeButton"]} to="/" onClick={() => gtagTrack("HomeLink", "click", "home")} title="Article">Article</Link>
 
       <div className={styles["post__content"]}>
@@ -34,7 +34,7 @@ type Props = {
       <div className={styles["post__comments"]}>
           <Comments postSlug={slug} postTitle={post.frontmatter.title} fbCommentUrl={fbCommentUrl} />
       </div>
-    </div>
+    </article>
   );
 };
 

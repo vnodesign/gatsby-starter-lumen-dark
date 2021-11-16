@@ -1,8 +1,7 @@
 // @flow strict
 import React from 'react';
 import { useSiteMetadata } from '../../../hooks';
-import loadable from '@loadable/component';
-const FacebookComment = loadable(() => import('./FacebookComment'));
+import FacebookComment from './FacebookComment';
 
 type Props = {
   postTitle: string,
