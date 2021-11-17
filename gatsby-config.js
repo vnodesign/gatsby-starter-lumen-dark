@@ -126,6 +126,7 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-external-links',
+          `gatsby-plugin-remove-fingerprints`,
         ],
       },
     },
