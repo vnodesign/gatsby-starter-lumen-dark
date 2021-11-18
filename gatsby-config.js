@@ -208,6 +208,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mini-css-class-name`,
+      options: {
+        prefix: `vnodesign-`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
@@ -235,6 +241,12 @@ module.exports = {
         // Disable the loading spinner.
         showSpinner: false,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        devMode: true,
       },
+    },
   ],
 };
