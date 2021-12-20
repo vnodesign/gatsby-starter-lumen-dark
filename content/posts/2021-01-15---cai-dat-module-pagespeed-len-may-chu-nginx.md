@@ -10,7 +10,7 @@ tags:
   - Nginx
   - Server
   - Linux
-slug: /2021/01/cai-dat-modile-pagespeed-len-may-chu-nginx
+slug: /2021/01/cai-dat-module-pagespeed-len-may-chu-nginx
 thumbnail: "/images/install-module-page-speed-on-server-nginx.jpg"
 description: ngx_pagespeed tăng tốc website của bạn và giảm thời gian load đáng kể bằng cách tự động áp dụng các kỹ thuật tối ưu hóa page và các thành phần tĩnh.
 fbCommentUrl: /2021/01/cai-dat-modile-pagespeed-len-may-chu-nginx
