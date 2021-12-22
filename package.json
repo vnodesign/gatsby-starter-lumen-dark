@@ -4,7 +4,7 @@
   "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build",
+    "build": "clean && gatsby build",
     "clean": "rm -rf .cache public",
     "flow": "flow",
     "lint:js": "eslint --cache --ext .js,.jsx .",
