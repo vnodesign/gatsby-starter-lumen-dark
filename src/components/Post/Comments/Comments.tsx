@@ -17,11 +17,12 @@ const Comments = ({ postSlug, fbCommentUrl = '' }: Props) => {
 
   if (facebookComment && facebookComment.active) {
     const oldUrl = 'http://tuanducdesign.com'; // TODO: migrate comment to new URL
+    const newUrl = 'https://tuanducdesign.com'; // TODO: migrate comment to new URL
     comments.push(
         <FacebookComment
           key="fb"
           facebookComment={facebookComment}
-          fbCommentUrl={fbCommentUrl}
+          fbCommentUrl={newUrl + fbCommentUrl}
           url={oldUrl + postSlug}
         />
     );

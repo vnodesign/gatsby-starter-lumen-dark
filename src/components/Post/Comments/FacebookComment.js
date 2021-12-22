@@ -28,6 +28,7 @@ export default class FacebookComment extends React.PureComponent {
     if (fbCommentUrl === 'none') {
       return null;
     }
+      const newColorScheme = window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {e.matches ? "dark" : "light";});
 
     const { url } = this.props;
     const { appId } = this.props.facebookComment;
@@ -35,11 +36,11 @@ export default class FacebookComment extends React.PureComponent {
     return (
       <FacebookProvider appId={appId}>
           {fbCommentUrl
-            ? <Comments href={fbCommentUrl} numPosts={100} mobile={true} />
+            ? <Comments href={fbCommentUrl} numPosts={100} mobile={true} colorscheme={newColorScheme} />
             : (
               <>
-                <Comments href={url} numPosts={100} mobile={true} />
-                <Comments href={url.replace('http://', 'https://')} numPosts={100} mobile={true} />
+                <Comments href={url} numPosts={100} mobile={true} colorscheme={newColorScheme} />
+                <Comments href={url.replace('http://', 'https://')} numPosts={100} mobile={true} colorscheme={newColorScheme} />
               </>
             )}
       </FacebookProvider>

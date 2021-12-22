@@ -42,8 +42,8 @@ module.exports = {
       path: 'https://service.tuanducdesign.com'
     },
     {
-      label: 'Profile',
-      path: 'https://profile.tuanducdesign.com'
+      label: 'About',
+      path: 'https://me.tuanducdesign.com'
     }
   ],
   author: {
