@@ -4,7 +4,7 @@
   "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
   "scripts": {
     "dev": "gatsby develop",
-    "build": "clean && gatsby build",
+    "build": "yarn clean && gatsby build",
     "clean": "rm -rf .cache public"
   },
   "template": "https://github.com/alxshelepenok/gatsby-starter-lumen",
