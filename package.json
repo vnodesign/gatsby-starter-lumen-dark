@@ -5,14 +5,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "clean && gatsby build",
-    "clean": "rm -rf .cache public",
-    "flow": "flow",
-    "lint:js": "eslint --cache --ext .js,.jsx .",
-    "lint:scss": "stylelint \"src/**/*.scss\"",
-    "lint": "concurrently \"yarn run lint:js\" \"yarn run lint:scss\" \"yarn flow\"",
-    "test": "jest --config ./jest/jest-config.js",
-    "test:coverage": "jest --coverage --config ./jest/jest-config.js",
-    "test:watch": "jest --watch --config ./jest/jest-config.js"
+    "clean": "rm -rf .cache public"
   },
   "template": "https://github.com/alxshelepenok/gatsby-starter-lumen",
   "author": "Tuan Duc Tran <miumiu.official.56@gmail.com>",
@@ -67,27 +60,9 @@
     "typography-plugin-code": "^0.16.19"
   },
   "devDependencies": {
-    "@babel/core": "7.15.0",
-    "@types/node": "14.17.27",
-    "@types/react": "17.0.31",
-    "@types/react-helmet": "^6.1.4",
     "autoprefixer": "10.2.5",
-    "babel-eslint": "10.1.0",
-    "babel-jest": "26.6.3",
-    "concurrently": "6.0.1",
-    "eslint": "7.32.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-import": "2.24.0",
-    "eslint-plugin-jest": "24.4.0",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-react": "7.24.0",
-    "flow-bin": "0.148.0",
-    "jest": "26.6.3",
-    "jest-cli": "26.6.3",
     "lost": "8.3.1",
     "moment-locales-webpack-plugin": "^1.2.0",
-    "postcss-pxtorem": "6.0.0",
-    "react-test-renderer": "17.0.2",
-    "stylelint": "13.13.0"
+    "postcss-pxtorem": "6.0.0"
   }
 }
