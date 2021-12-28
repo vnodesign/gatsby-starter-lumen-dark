@@ -194,6 +194,7 @@ module.exports = {
     'gatsby-plugin-no-sourcemaps',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-uninline-styles',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
