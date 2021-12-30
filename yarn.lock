@@ -5661,13 +5661,6 @@ gatsby-plugin-manifest@^3.2.0:
     semver "^7.3.5"
     sharp "^0.29.0"
 
-gatsby-plugin-mini-css-class-name@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mini-css-class-name/-/gatsby-plugin-mini-css-class-name-4.3.0.tgz#4f08cdd99ff1e9ae0cb3924c203423b0317c51b9"
-  integrity sha512-I5bNrV1JyBQSf9VJEY+6n+tAcdGKaFrtdDLFJzbRMflVMM5/NCsAKrHf5LWqkmijp0fzCfjX06YiOGFnfgQN4g==
-  dependencies:
-    mini-css-class-name "^0.12.2"
-
 gatsby-plugin-no-sourcemaps@^4.0.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-4.4.0.tgz#fd6214b724ab6d077df94b38868c1b2f0354742a"
@@ -8912,11 +8905,6 @@ min-indent@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.1.tgz#a63f681673b30571fbe8bc25686ae746eefa9869"
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
-
-mini-css-class-name@^0.12.2:
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/mini-css-class-name/-/mini-css-class-name-0.12.2.tgz#6542778729e67591bad185d5e35d095eafee7e77"
-  integrity sha512-yrnXuMk+nh++vUnnTN5dRsGSfe3wu+xd5P08xKJDESSacGXAIVLpsIg0sPmOTj013Iy3bAn7Bmw5gFVyLNynYA==
 
 mini-css-extract-plugin@1.6.2:
   version "1.6.2"

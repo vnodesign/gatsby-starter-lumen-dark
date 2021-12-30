@@ -209,12 +209,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-mini-css-class-name`,
-      options: {
-        prefix: `vnodesign-`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
