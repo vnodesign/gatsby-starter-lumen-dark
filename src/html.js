@@ -9,6 +9,7 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         {props.headComponents}
+        <script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4183134625750063" />
       </head>
       <body {...props.bodyAttributes} itemScope itemType="https://schema.org/WebPage">
         {props.preBodyComponents}
