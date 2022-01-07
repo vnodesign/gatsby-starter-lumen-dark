@@ -5,9 +5,8 @@ admin_path: backend
 webhook_url: 
 sections:
 - type: document
-  path: "**/*"
+  path: ''
   label: Data
-  match: "**/*"
 - type: heading
   label: Posts
 - type: directory
