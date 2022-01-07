@@ -4,9 +4,11 @@ auto_deploy: false
 admin_path: backend
 webhook_url: 
 sections:
-- type: document
-  path: "**/*"
-  label: Code
+- type: directory
+  path: ''
+  label: Data
+  create: none
+  match: "**/*"
 - type: heading
   label: Posts
 - type: directory
