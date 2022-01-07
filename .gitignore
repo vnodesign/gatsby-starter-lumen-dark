@@ -5,3 +5,4 @@ node_modules
 public
 .user.ini
 .vscode
+package-lock.json

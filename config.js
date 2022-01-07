@@ -51,7 +51,7 @@ module.exports = {
     photo: '/tuanducdesign.jpg',
     bio: 'Ask me about Optimize Website, Install VPS, Hosting Selection...',
     contacts: {
-      email: 'miumiu.official.56@gmail.com',
+      email: 'tuanducdesign@tuanducdesign.com',
       twitter: 'tuanducdesign',
       github: 'tuanducdesign',
       rss: '/rss.xml',

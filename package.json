@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "yarn clean && gatsby build",
-    "clean": "rm -rf .cache public"
+    "clean": "rm -rf .cache"
   },
   "template": "https://github.com/alxshelepenok/gatsby-starter-lumen",
   "author": "Tuan Duc Tran <miumiu.official.56@gmail.com>",
