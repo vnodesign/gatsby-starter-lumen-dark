@@ -4,13 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: static
-  label: Image
-  match: "**/*"
-- type: document
+- type: directory
   path: src
-  label: Code editor
+  label: Source Code
+  create: all
   match: "**/*"
 - type: heading
   label: Posts
@@ -19,6 +16,9 @@ sections:
   label: Content
   create: all
   match: "**/*"
+- type: document
+  path: static
+  label: Image
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
