@@ -1,0 +1,34 @@
+---
+label: Hr
+hide_body: false
+fields:
+- type: text
+  name: template
+  label: template
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: authorName
+  label: authorName
+- type: text
+  name: category
+  label: category
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: slug
+  label: slug
+- type: file
+  name: thumbnail
+  label: thumbnail
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: fbCommentUrl
+  label: fbCommentUrl
