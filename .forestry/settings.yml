@@ -7,8 +7,9 @@ sections:
 - type: directory
   path: ''
   label: Data
-  create: none
+  create: all
   match: "**/*"
+  new_doc_ext: "*"
 - type: heading
   label: Posts
 - type: directory
