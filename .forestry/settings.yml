@@ -4,14 +4,21 @@ auto_deploy: false
 admin_path: backend
 webhook_url: 
 sections:
-- type: document
-  path: ''
-  label: Data
 - type: heading
-  label: Posts
-- type: directory
-  path: content
   label: Content
+- type: directory
+  path: content/posts
+  label: Posts
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/pages
+  label: Pages
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/draft_posts
+  label: Draft
   create: all
   match: "**/*"
 upload_dir: static
