@@ -9,7 +9,6 @@ sections:
 - type: document
   path: ''
   label: Code editor
-  match: "**/*"
 - type: heading
   label: Posts
 - type: directory
