@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: static
+  label: Image
+  match: "**/*"
+- type: document
   path: src
   label: Code editor
   match: "**/*"
@@ -13,11 +17,6 @@ sections:
 - type: directory
   path: content
   label: Content
-  create: all
-  match: "**/*"
-- type: directory
-  path: static
-  label: Static
   create: all
   match: "**/*"
 upload_dir: uploads
