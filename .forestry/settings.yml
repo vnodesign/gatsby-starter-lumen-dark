@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: backend
 webhook_url: 
 sections:
-- type: directory
-  path: ''
-  label: Data
-  create: all
-  match: "**/*"
-  new_doc_ext: "*"
 - type: heading
   label: Posts
 - type: directory
