@@ -1,6 +1,6 @@
 ---
 label: Series
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: template
@@ -32,5 +32,74 @@ fields:
 - type: text
   name: fbCommentUrl
   label: fbCommentUrl
+- name: featured
+  type: boolean
+  label: featured
+- name: pricecurrency
+  type: text
+  config:
+    required: false
+  label: priceCurrency
+  default: ''
+- name: price
+  type: number
+  label: price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: ratingvalue
+  type: number
+  label: ratingValue
+  description: ''
+  default: 1
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: ratingcount
+  type: number
+  label: ratingCount
+  description: ''
+  default: 1
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: reviewcount
+  type: number
+  label: reviewCount
+  description: ''
+  default: 1
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: worstrating
+  type: number
+  label: worstRating
+  description: ''
+  default: 1
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: bestrating
+  type: number
+  label: bestRating
+  description: ''
+  default: 1
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - content/posts/h-ng-d-n-v-mongodb.md
