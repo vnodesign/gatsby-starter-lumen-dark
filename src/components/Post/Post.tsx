@@ -17,14 +17,14 @@ type Props = {
   const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date, authorName, fbCommentUrl, category } = post.frontmatter;
+  const { tags, title, date, authorName, fbCommentUrl } = post.frontmatter;
 
   return (
     <article className={styles.post} itemScope itemType="http://schema.org/Article">
       <Link className={styles["post__homeButton"]} to="/" onClick={() => gtagTrack("HomeLink", "click", "home")} title="Article">Article</Link>
 
       <div className={styles["post__content"]}>
-        <Content authorName={authorName} date={date} category={category} body={html} title={title} />
+        <Content authorName={authorName} date={date} body={html} title={title} />
       </div>
 
       <div className={styles["post__footer"]}>
