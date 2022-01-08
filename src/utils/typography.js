@@ -1,7 +1,8 @@
 import Typography from 'typography';
 import CodePlugin from 'typography-plugin-code';
-import { fonts, fontsLists } from 'gatsby-design-tokens';
-import {
+import { 
+  fonts, 
+  fontsLists,
   colors,
   fontSizes,
   fontWeights,
@@ -37,15 +38,12 @@ const _options = {
     'h1, h2, h3, h4, h5, h6': {
       letterSpacing: letterSpacings.tight
     },
-    h2: {
-      marginTop: space[9]
-    },
-    h3: {
+    'h2, h3': {
       marginTop: space[9]
     },
     'h4, h5, h6': { fontSize: fontSizes[3] },
     'h5, h6': { fontWeight: fontWeights['body'] },
-    h6: { fontSize: fontSizes[2] },
+    // h6: { fontSize: fontSizes[2] },
     blockquote: {
       paddingLeft: space[6],
       marginLeft: 0,
@@ -109,19 +107,11 @@ const _options = {
       textTransform: 'uppercase',
       top: '0'
     },
-    '.gatsby-highlight pre[class=\'language-javascript\']::before': {
+    '.gatsby-highlight pre[class=\'language-javascript\']::before, .gatsby-highlight pre[class=\'language-js\']::before': {
       content: '\'js\'',
       background: '#f7df1e'
     },
-    '.gatsby-highlight pre[class=\'language-js\']::before': {
-      content: '\'js\'',
-      background: '#f7df1e'
-    },
-    '.gatsby-highlight pre[class=\'language-python\']::before': {
-      content: '\'python\'',
-      background: '#f7df1e'
-    },
-    '.gatsby-highlight pre[class=\'language-py\']::before': {
+    '.gatsby-highlight pre[class=\'language-python\']::before, .gatsby-highlight pre[class=\'language-py\']::before': {
       content: '\'python\'',
       background: '#f7df1e'
     },
@@ -326,7 +316,6 @@ const _options = {
     '.token.selector, .token.attr-name, .token.string, .token.char, .token.function, .token.builtin': {
       color: colors.code.selector
     },
-    '.token.operator, .token.entity, .token.url, .token.variable': {},
     '.token.atrule, .token.attr-value, .token.keyword, .token.class-name': {
       color: colors.code.keyword
     },
