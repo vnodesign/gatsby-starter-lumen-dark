@@ -1,6 +1,6 @@
 ---
 label: Post Featured
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: template
