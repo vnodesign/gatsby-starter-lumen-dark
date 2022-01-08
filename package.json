@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "yarn clean && gatsby build",
-    "clean": "rm -rf .cache"
+    "clean": "rm -rf .cache public"
   },
   "template": "https://github.com/alxshelepenok/gatsby-starter-lumen",
   "author": "Tuan Duc Tran <miumiu.official.56@gmail.com>",
@@ -25,7 +25,6 @@
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-no-sourcemaps": "^4.0.0",
     "gatsby-plugin-nprogress": "^4.0.0",
-    "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-preconnect": "^1.2.1",
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-remove-fingerprints": "^0.0.2",

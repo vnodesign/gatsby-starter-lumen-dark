@@ -155,7 +155,6 @@ module.exports = {
         cache_busting_mode: 'none',
       },
     },
-    'gatsby-plugin-offline',
     'gatsby-plugin-no-sourcemaps',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
