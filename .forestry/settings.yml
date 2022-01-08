@@ -21,9 +21,9 @@ sections:
   label: Draft
   create: all
   match: "**/*"
-upload_dir: static
+upload_dir: static/images
 public_path: "/static/images"
-front_matter_path: "/static/images"
+front_matter_path: "/images"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
