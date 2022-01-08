@@ -32,3 +32,5 @@ fields:
 - type: text
   name: fbCommentUrl
   label: fbCommentUrl
+pages:
+- content/posts/h-ng-d-n-v-mongodb.md
