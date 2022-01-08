@@ -2,33 +2,57 @@
 label: Post
 hide_body: false
 fields:
-- type: text
-  name: template
+- name: template
+  type: select
+  default: post
+  config:
+    required: true
+    options:
+    - post
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: template
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: datetime
   name: date
   label: date
+  config:
+    required: true
 - type: text
   name: authorName
   label: authorName
+  config:
+    required: true
 - type: text
   name: category
   label: category
+  config:
+    required: true
 - type: list
   name: tags
   label: tags
 - type: text
   name: slug
   label: slug
+  config:
+    required: true
 - type: file
   name: thumbnail
   label: thumbnail
 - type: text
   name: description
   label: description
+  config:
+    required: true
 - type: text
   name: fbCommentUrl
   label: fbCommentUrl
+  config:
+    required: true
