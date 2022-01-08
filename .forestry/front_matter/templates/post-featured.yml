@@ -9,7 +9,6 @@ fields:
     required: true
     options:
     - post
-    - page
     source:
       type: simple
       section: content
