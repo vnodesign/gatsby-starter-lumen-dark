@@ -5,6 +5,18 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: template
+  config:
+    required: true
+- name: template
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - page
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: template
