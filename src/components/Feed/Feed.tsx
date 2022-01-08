@@ -25,7 +25,7 @@ const Feed = ({ edges }: Props) => (
           <span className={styles['feed__itemMetaDivider']} />
           <time className={styles['feed__itemMetaTime']} dateTime={moment(edge.node.frontmatter.date).fromNow()} itemProp="datePublished">{moment(edge.node.frontmatter.date).fromNow()}</time>
         </div>
-        {/* <p className={styles['feed__itemDescription']} itemProp="description">{edge.node.frontmatter.description}</p> */}
+        <p className={styles['feed__itemDescription']} itemProp="description">{edge.node.frontmatter.description}</p>
         <Link className={styles['feed__itemThumbnail']} to={edge.node.fields.slug} onClick={() => gtagTrack('ThumbLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title}><img itemProp="image" src={edge.node.frontmatter.thumbnail} decoding="async" loading="lazy" alt={edge.node.frontmatter.title} width="600" height="400" /></Link>
       </article>
     ))}
