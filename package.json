@@ -20,6 +20,7 @@
     "gatsby-plugin-catch-links": "^3.2.0",
     "gatsby-plugin-feed": "^3.2.0",
     "gatsby-plugin-flow": "^2.2.0",
+    "gatsby-plugin-gatsby-cloud": "^4.4.0",
     "gatsby-plugin-google-gtag": "^4.4.0",
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-no-sourcemaps": "^4.0.0",

@@ -173,6 +173,24 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        headers: {
+          "/backend*": [
+            "Basic-Auth: tuanducdesign:TuanDuc27157Miu@=",
+          ],
+        },    
+        allPageHeaders: [
+          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+        ],
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
+    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
