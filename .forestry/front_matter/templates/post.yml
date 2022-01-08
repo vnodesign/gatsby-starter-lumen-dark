@@ -56,5 +56,3 @@ fields:
   label: fbCommentUrl
   config:
     required: true
-pages:
-- content/posts/2022-01-cai-dat-mongodb-len-ubuntu.md
