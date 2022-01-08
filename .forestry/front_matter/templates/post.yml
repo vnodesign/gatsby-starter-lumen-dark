@@ -56,3 +56,5 @@ fields:
   label: fbCommentUrl
   config:
     required: true
+pages:
+- content/posts/cai-d-t-mongodb-len-ubuntu.md
