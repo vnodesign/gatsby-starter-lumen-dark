@@ -56,3 +56,5 @@ fields:
   label: fbCommentUrl
   config:
     required: true
+pages:
+- content/posts/ki-m-tra-phien-b-n-mongodb.md
