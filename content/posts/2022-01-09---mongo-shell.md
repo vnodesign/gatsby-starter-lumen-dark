@@ -18,7 +18,7 @@ fbCommentUrl: "/series/mongo-shell"
 ---
 **Mongo shell** là một giao diện JavaScript tương tác với MongoDB Server được sử dụng để thực hiện các hoạt động quản trị và dữ liệu. Trong bài viết này tìm hiểu cách sử dụng của nó.
 
-![Khởi chạy máy chủ MongoDB](/images/khoi-chay-may-chu-mongodb.png)
+![Mongo shell](/images/khoi-chay-may-chu-mongodb.png)
 
 Trước khi kết nối với MongoDB, hãy đảm bảo rằng MongoDB đang chạy. Nếu không, hãy khởi động MongoDB.
 
