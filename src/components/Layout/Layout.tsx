@@ -15,7 +15,7 @@ type Props = {
 
 const Layout = ({ children, title, subtitle, description, thumbnail = '' }: Props) => {
   const { author, url } = useSiteMetadata();
-  const metaImage = thumbnail || author.photo;
+  const metaImage = author.photo || thumbnail;
   const metaImageUrl = url + metaImage;
 
   return (
