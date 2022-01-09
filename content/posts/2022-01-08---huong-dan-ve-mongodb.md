@@ -1,7 +1,7 @@
 ---
 template: post
 title: Hướng dẫn về MongoDB
-date: 2022-01-08T00:00:00+07:00
+date: 2022-01-08T00:00:00.000+07:00
 authorName: Tuan Duc Design
 category: MongoDB
 tags:
@@ -15,7 +15,7 @@ description: Tìm hiểu MongoDB từ những điều cơ bản bao gồm Mongo 
 fbCommentUrl: "/series/huong-dan-ve-mongodb"
 
 ---
-Trong Hướng dẫn về MongoDB này, chúng ta sẽ tìm hiểu các kiến thức cơ bản về MongoDB, các Thao tác CRUD khác nhau có sẵn cho Tài liệu, Collection và Cơ sở dữ liệu MongoDB và tích hợp MongoDB với các ứng dụng được phát triển bằng các ngôn ngữ lập trình như Java, Python, Kotlin, Java Script, v.v. Chúng ta cũng sẽ thực hiện bạn thông qua các ví dụ MongoDB khác nhau để hiểu rõ hơn về cú pháp.
+Trong Hướng dẫn về MongoDB này, chúng ta sẽ tìm hiểu các kiến thức cơ bản về MongoDB, các thao tác CRUD khác nhau có sẵn cho tài liệu, Collection và Cơ sở dữ liệu MongoDB và tích hợp MongoDB với các ứng dụng được phát triển bằng các ngôn ngữ lập trình như Java, Python, Kotlin, Java Script, v.v. Chúng ta cũng sẽ thực hiện thông qua các ví dụ MongoDB khác nhau để hiểu rõ hơn về cú pháp.
 
 ![Hướng dẫn về MongoDB](/images/huong-dan-ve-mongodb.png)
 
@@ -29,11 +29,11 @@ Trong Hướng dẫn về MongoDB này, chúng ta sẽ tìm hiểu các kiến t
    * Cơ sở dữ liệu MongoDB
    * Tạo cơ sở dữ liệu MongoDB
    * Xoá cơ sở dữ liệu MongoDB
-3. **MongoDB Collection** - MongoDB Collection tương tự như một bảng trong SQL. Nếu chứa nhiều tài liệu (hồ sơ). Sau đây là các hướng dẫn về MongoDB sẽ giúp bạn hiểu rõ hơn về Collection MongoDB, cách tạo và xóa bộ sưu tập MongoDB.
+3. **MongoDB Collection** - MongoDB Collection tương tự như một bảng trong SQL. Nếu chứa nhiều tài liệu (hồ sơ). Sau đây là các hướng dẫn về MongoDB sẽ giúp bạn hiểu rõ hơn về Collection MongoDB, cách tạo và xóa Collection MongoDB.
    * MongoDB Collection
    * Tạo MongoDB Collection
    * Xoá MongoDB Collection
-4. **Tài liệu MongoDB** - Tài liệu MongoDB chứa các cặp khóa/giá trị như thuộc tính/giá trị trong một bảng. Sau đây là các Hướng dẫn về MongoDB sẽ giúp bạn với các thao tác CRUD mà bạn có thể thực hiện trên tài liệu MongoDB và các khái niệm nâng cao hơn như nhân bản, v.v.
+4. **Tài liệu MongoDB** - Tài liệu MongoDB chứa các cặp khóa/giá trị như thuộc tính/giá trị trong một bảng. Sau đây là các hướng dẫn về MongoDB sẽ giúp bạn với các thao tác CRUD mà bạn có thể thực hiện trên tài liệu MongoDB và các khái niệm nâng cao hơn như nhân bản, v.v.
    * Tài liệu trong MongoDB
    * Chèn tài liệu trong MongoDB
    * Truy vấn tài liệu trong MongoDB
