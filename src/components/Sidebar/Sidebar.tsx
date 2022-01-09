@@ -15,7 +15,7 @@ const Sidebar = ({ isIndex }: Props) => {
   const { author, menu, copyright } = useSiteMetadata();
 
   return (
-    <div className={styles.sidebar} itemScope itemType="https://schema.org/WPSideBar">
+    <div className={styles.sidebar} role="complementary" itemScope itemType="https://schema.org/WPSideBar">
       <div className={styles.sidebar__inner}>
         <Author author={author} isIndex={isIndex || false} />
         <Menu menu={menu} />
