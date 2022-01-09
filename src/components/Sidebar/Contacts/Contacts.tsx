@@ -13,11 +13,12 @@ type Props = {
 };
 
 const Contacts = ({ contacts }: Props) => (
-  <div className={styles['contacts']}>
+  <div className={styles['contacts']} itemProp="mainEntity" itemScope itemType="https://schema.org/Person">
+    <link href="https://tuanducdesign.com/" itemProp="url" />
     <ul className={styles['contacts__list']}>
       {Object.keys(contacts).map((name: string) => (!contacts[name] ? null : (
         <li className={styles['contacts__listItem']} key={name}>
-          <a className={styles['contacts__listItemLink']} href={getContactHref(name, contacts[name])} onClick={() => gtagTrack('Sidebar_Contact', 'click', getContactHref(name, contacts[name]))} rel="noopener noreferrer" target="_blank" title={name}>
+          <a className={styles['contacts__listItemLink']} href={getContactHref(name, contacts[name])} onClick={() => gtagTrack('Sidebar_Contact', 'click', getContactHref(name, contacts[name]))} rel="noopener noreferrer" target="_blank" title={name} itemProp="sameAs">
             <Icon name={name} icon={getIcon(name)} />
           </a>
         </li>

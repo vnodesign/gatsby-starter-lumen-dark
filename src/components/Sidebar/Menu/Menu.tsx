@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Menu = ({ menu }: Props) => (
-  <nav className={styles['menu']} role="navigation" itemScope itemType="https://schema.org/SiteNavigationElement">
+    <nav className={styles['menu']} role="navigation" itemScope itemType="https://schema.org/SiteNavigationElement">
     <ul className={styles['menu__list']}>
       {menu.map((item) => (
         <li className={styles['menu__listItem']} key={item.path}>
