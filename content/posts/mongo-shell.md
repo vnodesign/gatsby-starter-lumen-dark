@@ -1,45 +1,124 @@
 ---
 template: post
 title: Mongo Shell
-date: 2022-01-09T00:00:00+07:00
+date: 2022-01-09T12:41:00+07:00
 authorName: Tuan Duc Design
 category: MongoDB
 tags:
 - Mongodb
-- Windows
-slug: "/series/khoi-chay-may-chu-mongodb"
+- Mongo
+- Shell
+slug: "/series/mongo-shell"
 thumbnail: "/images/khoi-chay-may-chu-mongodb.png"
-description: Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon
-  (mongod.exe) có trong thư mục bin của Thư mục cài đặt MongoDB.
-fbCommentUrl: "/series/khoi-chay-may-chu-mongodb"
+description: Mongo shell là một giao diện JavaScript tương tác với MongoDB Server
+  được sử dụng để thực hiện các hoạt động quản trị và dữ liệu. Trong bài viết này
+  tìm hiểu cách sử dụng của nó.
+fbCommentUrl: "/series/mongo-shell"
 
 ---
-Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon (mongod.exe) có trong thư mục bin của Thư mục cài đặt MongoDB.
+**Mongo shell** là một giao diện JavaScript tương tác với MongoDB Server được sử dụng để thực hiện các hoạt động quản trị và dữ liệu. Trong bài viết này tìm hiểu cách sử dụng của nó.
 
 ![Khởi chạy máy chủ MongoDB](/images/khoi-chay-may-chu-mongodb.png)
 
-## Người dùng Windows
+Trước khi kết nối với MongoDB, hãy đảm bảo rằng MongoDB đang chạy. Nếu không, hãy khởi động MongoDB.
 
-Giả sử rằng bạn đã cài đặt Máy chủ MongoDB với các tùy chọn mặc định, đặc biệt là thư mục cài đặt dưới dạng C:\\Program Files\\MongoDB\\Server\\4.0. Bên trong thư mục này, bạn có thư mục bin chứa mongod.exe.
+Để khởi động MongoDB, hãy chạy lệnh sau trong ứng dụng Terminal.
 
-Cũng giả sử rằng đường dẫn cơ sở dữ liệu là: C:\\data\\db\\
+**Windows**
 
-Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon (mongod.exe) bằng lệnh sau:
+```bash
+C:\> "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
+```
 
-C:\\> "C:\\Program Files\\MongoDB\\Server\\4.0\\bin\\mongod.exe"
+**Ubuntu**
 
-Lưu ý rằng chương trình chúng tôi đang chạy là mongod.exe chứ không phải mongo.exe.
+```bash
+sudo service mongod start
+```
 
-mongo.exe được sử dụng để khởi động Mongo Shell, trong khi mongod.exe được sử dụng để chạy Mongo Server.
+## Khởi động Mongo Shell
 
-Bạn đợi một lúc để máy chủ MongoDB khởi động.
+Khi bạn chắc chắn rằng MongoDB đang chạy,
 
-Từ các thông báo được ghi vào bảng điều khiển, bạn có thể quan sát thấy rằng:
+**Windows**
 
-* Máy chủ Mongo được khởi động như một tiến trình với id tiến trình là (pid): 11716.
-* Máy chủ Mongo đang lắng nghe ở cổng: 27107. Bạn có thể thấy ở cuối nhật ký \[initandlisten\] đang chờ kết nối trên cổng 27017.
-* Máy chủ Mongo đang sử dụng cơ sở dữ liệu có tại vị trí C:\\data\\db\\.
+Mở Cửa sổ lệnh khác và chạy lệnh sau.
 
-Trong quá trình sử dụng bạn không đóng cửa sổ Command Prompt này.
+```bash
+C:\> "C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+```
 
-Bây giờ, bạn có thể kết nối với máy chủ này với tư cách là máy khách từ các cửa sổ Command Prompt khác.
+**Ubuntu**
+
+Mở một Terminal khác và chạy lệnh sau để bắt đầu mongo shell.
+
+```bash
+mongo
+```
+
+Nếu máy chủ không chạy, bạn có thể nhận được thông báo kết nối không thành công như sau:
+
+```bash
+connect@src/mongo/shell/mongo.js:237:13
+@(connect):1:6
+exception: connect failed
+```
+
+Khi không có tham số nào được cung cấp với lệnh mongo, chức năng mặc định là, mongo shelll sẽ cố gắng tạo kết nối với máy chủ MongoDB đang chạy tại **localhost** trên **cổng 27017**.
+
+Nhưng nếu bạn muốn kết nối với máy chủ MongoDB đang chạy trên một máy khác được kết nối với mạng của bạn, bạn có thể sử dụng các tùy chọn của mongo shell như được hiển thị bên dưới
+
+```bash
+mongo --host <host> --port <port_number>
+```
+
+Một ví dụ được cung cấp bên dưới
+
+```bash
+mongo --host 192.168.0.104 --port 28019
+```
+
+Bây giờ chúng ta sẽ chạy một truy vấn đơn giản db để biết cơ sở dữ liệu mà shell đang trỏ tới.
+
+```bash
+>db
+test
+```
+
+**test** là một cơ sở dữ liệu mặc định.
+
+## Khởi động Mongo Shell cho một phiên bản MongoDB được chỉ định trong số nhiều phiên bản
+
+Nếu bạn gặp trường hợp có nhiều phiên bản MongoDB chạy trong cùng một máy, nhưng tất nhiên trên các cổng khác nhau, thì để kết nối với một phiên bản MongoDB cụ thể được phân biệt bởi cổng mà nó đang chạy, hãy chạy lệnh sau:
+
+```bash
+mongo --port <port_number>
+```
+
+Sau đây là một ví dụ minh họa để mở Mongo Shell được kết nối với một phiên bản MongoDB đang chạy ở cổng 27018.
+
+```bash
+mongo --port 27018
+```
+
+## Lệnh Mongo Shell
+
+* help - hiển thị trợ giúp
+* help admin - hiển thị trợ giúp dành cho admin
+* help connect - kết nối với trợ giúp db
+* help keys - phím tắt
+* help misc - những điều sai cần biết
+* help mr - mapreduce
+* show dbs - hiển thị tên cơ sở dữ liệu
+* show collections - hiển thị các collections trong cơ sở dữ liệu hiện tại
+* show users - hiển thị người dùng trong cơ sở dữ liệu hiện tại
+* show profile - hiển thị các mục nhập system.profile gần đây nhất với thời gian> = 1ms
+* show logs - hiển thị tên trình ghi có thể truy cập
+* show log \[name\] - in ra phân đoạn cuối cùng của bộ nhớ đăng nhập, 'global' là mặc định
+* use <db_name> - thiết lập cơ sở dữ liệu hiện tại
+* it - kết quả của dòng cuối cùng được đánh giá; sử dụng để lặp lại
+* exit - thoát mongo shell
+
+## Kết
+
+Trong hướng dẫn về MongoDB này, chúng ta đã tìm hiểu về Mongo Shell, cách sử dụng và kết nối của nó với Máy chủ MongoDB khi máy chủ đang chạy trong một máy khác trong mạng.
