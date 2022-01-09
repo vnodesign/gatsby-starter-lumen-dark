@@ -1,12 +1,13 @@
 ---
 template: post
-title: Khởi động máy chủ MongoDB
+title: Khởi chạy máy chủ MongoDB
 date: 2022-01-09T00:00:00+07:00
 authorName: Tuan Duc Design
 category: MongoDB
 tags:
 - Mongodb
-slug: "/series/khoi-dong-may-chu-mongodb"
+- Windows
+slug: "/series/khoi-chay-may-chu-mongodb"
 thumbnail: "/images/khoi-chay-may-chu-mongodb.png"
 description: Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon
   (mongod.exe) có trong thư mục bin của Thư mục cài đặt MongoDB.
