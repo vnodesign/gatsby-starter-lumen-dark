@@ -210,7 +210,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
-        headers: [],    
+        headers: {},    
         allPageHeaders: [
           "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
         ],
