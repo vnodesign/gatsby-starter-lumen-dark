@@ -25,6 +25,7 @@
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-no-sourcemaps": "^4.0.0",
     "gatsby-plugin-nprogress": "^4.0.0",
+    "gatsby-plugin-offline": "^5.4.0",
     "gatsby-plugin-preconnect": "^1.2.1",
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-remove-fingerprints": "^0.0.2",
