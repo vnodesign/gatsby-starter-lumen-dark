@@ -49,7 +49,7 @@ Khi bạn khởi động Mongo Shell, các phiên bản của MongoDB Server và
 **Windows**
 
 ```bash
-C:\>"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+C:\>"C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe"
 MongoDB shell version v5.0.4
 ```
 
