@@ -27,7 +27,7 @@ Trước khi kết nối với MongoDB, hãy đảm bảo rằng MongoDB đang c
 **Windows**
 
 ```bash
-C:\> "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
+C:\> "C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe"
 ```
 
 **Ubuntu**
@@ -45,7 +45,7 @@ Khi bạn chắc chắn rằng MongoDB đang chạy,
 Mở Cửa sổ lệnh khác và chạy lệnh sau.
 
 ```bash
-C:\> "C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+C:\> "C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe"
 ```
 
 **Ubuntu**
