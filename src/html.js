@@ -14,7 +14,6 @@ export default function HTML(props) {
         {props.preBodyComponents}
         <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} itemProp="mainContentOfPage" itemScope itemType="https://schema.org/WebPageElement" />
         {props.postBodyComponents}
-        <script dangerouslySetInnerHTML={{__html: `function td_adsense(){var t=document.createElement("script");t.async=!0,t.defer=!0,t.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4183134625750063",document.body.appendChild(t)}window.addEventListener?window.addEventListener("load",td_adsense,!1):window.attachEvent?window.attachEvent("onload",td_adsense):window.onload=td_adsense;`,}} />
       </body>
     </html>
   )
