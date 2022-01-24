@@ -46,6 +46,7 @@ module.exports = {
       path: 'https://me.tuanducdesign.com'
     }
   ],
+  share: '/CA0E67E9-AAD0-4D36-82D8-674C7504DFD1.jpg',
   author: {
     name: 'Tuan Duc Design',
     photo: '/tuanducdesign.jpg',
