@@ -26,7 +26,7 @@ const Feed = ({ edges }: Props) => (
           <Link className={styles['feed__itemTitleLink']} to={edge.node.fields.slug} onClick={() => gtagTrack('PostLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title} itemProp="url">{edge.node.frontmatter.title}</Link>
         </h2>
         <p className={styles['feed__itemDescription']} itemProp="description">{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__itemThumbnail']} to={edge.node.fields.slug} onClick={() => gtagTrack('ThumbLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title}><img itemProp="image" src={edge.node.frontmatter.thumbnail} decoding="async" loading="lazy" alt={edge.node.frontmatter.title} width="600" height="400" /></Link>
+        {/* <Link className={styles['feed__itemThumbnail']} to={edge.node.fields.slug} onClick={() => gtagTrack('ThumbLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title}><img itemProp="image" src={edge.node.frontmatter.thumbnail} decoding="async" loading="lazy" alt={edge.node.frontmatter.title} width="600" height="400" /></Link> */}
       </article>
     ))}
   </div>
