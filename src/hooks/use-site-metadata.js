@@ -7,6 +7,7 @@ const useSiteMetadata = () => {
       query SiteMetaData {
         site {
           siteMetadata {
+            share
             author {
               name
               bio
