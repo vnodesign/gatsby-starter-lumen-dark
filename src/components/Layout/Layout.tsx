@@ -13,12 +13,11 @@ type Props = {
   thumbnail?: string
 };
 
-const Layout = (location, {children, title, subtitle, description, thumbnail = '' }: Props) => {
+const Layout = ({children, title, subtitle, description, thumbnail = '' }: Props) => {
   const { author, url, facebookComment } = useSiteMetadata();
   const metaImage = thumbnail || author.cover;
   const metaImageUrl = url + metaImage;
   const appID = facebookComment.appId;
-  const baseUrl = location.href ? location.href : '';
   return (
   <div className={styles.layout}>
     <Helmet>
@@ -27,7 +26,6 @@ const Layout = (location, {children, title, subtitle, description, thumbnail = '
       <meta name="description" content={description} />
       <meta name="image" content={metaImageUrl} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={baseUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content={title} />
       <meta property="og:image" content={metaImageUrl} />
