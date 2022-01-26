@@ -14,12 +14,10 @@ type Props = {
 };
 
 const PostTemplate = ({ data }: Props) => {
-  const { url, author, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { title: postTitle, description: postDescription = '', thumbnail, authorName, date, fbCommentUrl, featured, priceCurrency, price, ratingValue, ratingCount, reviewCount, worstRating, bestRating } = data.markdownRemark.frontmatter;
+  const { url, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: postTitle, description: postDescription = '', thumbnail, fbCommentUrl, featured, priceCurrency, price, ratingValue, ratingCount, reviewCount, worstRating, bestRating } = data.markdownRemark.frontmatter;
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
   const thumbnailUrl = thumbnail;
-  const authorpost = authorName;
-  const datepost = date;
   const posturl = fbCommentUrl;
   const showschema = featured || false;
   const schemaRatingPriceCurrency = priceCurrency || 0;

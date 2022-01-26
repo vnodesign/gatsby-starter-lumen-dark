@@ -18,7 +18,6 @@ type Props = {
 
 const CategoryTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-
   const {
     category,
     currentPage,

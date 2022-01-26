@@ -141,42 +141,7 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        workboxConfig: {
-          runtimeCaching: [
-            {
-              // Use cacheFirst since these don't need to be revalidated (same RegExp
-              // and same reason as above)
-              urlPattern: /(\.js$|\.css$|static\/)/,
-              handler: 'CacheFirst',
-            },
-            {
-              // page-data.json files are not content hashed
-              urlPattern: /^https?:.*\page-data\/.*\/page-data\.json/,
-              handler: 'NetworkFirst',
-            },
-            {
-              // Add runtime caching of various other page resources
-              urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-              handler: 'StaleWhileRevalidate',
-            },
-            {
-              // Google Fonts CSS (doesn't end in .css so we need to specify it)
-              urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-              handler: 'StaleWhileRevalidate',
-            },
-            // Everything above is from the default config.
-            {
-              // Match any path ending in /
-              urlPattern: /\/$/,
-              handler: 'NetworkFirst',
-            },
-          ],
-        },
-      },
-    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -207,20 +172,20 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        headers: {},    
-        allPageHeaders: [
-          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
-        ],
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-gatsby-cloud`,
+    //   options: {
+    //     headers: {},    
+    //     allPageHeaders: [
+    //       "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+    //     ],
+    //     mergeSecurityHeaders: true, // boolean to turn off the default security headers
+    //     mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+    //     mergeCachingHeaders: true, // boolean to turn off the default caching headers
+    //     transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+    //     generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
@@ -256,18 +221,18 @@ module.exports = {
         showSpinner: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-minify`,
-      options: {
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-        removeComments: true,
-        removeEmptyAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        processConditionalComments: true
-      }
-    }
+    // {
+    //   resolve: `gatsby-plugin-minify`,
+    //   options: {
+    //     collapseWhitespace: true,
+    //     minifyCSS: true,
+    //     minifyJS: true,
+    //     removeComments: true,
+    //     removeEmptyAttributes: true,
+    //     removeScriptTypeAttributes: true,
+    //     removeStyleLinkTypeAttributes: true,
+    //     processConditionalComments: true
+    //   }
+    // }
   ],
 };

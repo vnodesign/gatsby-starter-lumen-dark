@@ -1,8 +1,14 @@
+node_modules/
+.cache/
+public/
+npm-debug.log
+.eslintcache
+.gatsby-context.js
+.idea
+gatsby-starter-lumen.iml
+.vscode
 .DS_Store
 cloudflared
-node_modules
-.cache
 public
 .user.ini
-.vscode
 package-lock.json
