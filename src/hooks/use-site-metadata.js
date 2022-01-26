@@ -7,13 +7,11 @@ const useSiteMetadata = () => {
       query SiteMetaData {
         site {
           siteMetadata {
-            cover {
-              share
-            }
             author {
               name
               bio
               photo
+              cover
               contacts {
                 email
                 twitter

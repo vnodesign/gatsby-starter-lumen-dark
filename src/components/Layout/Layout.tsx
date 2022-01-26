@@ -14,8 +14,8 @@ type Props = {
 };
 
 const Layout = ({ children, title, subtitle, description, thumbnail = '' }: Props) => {
-  const { author, url, cover } = useSiteMetadata();
-  const metaImage = cover.share || thumbnail;
+  const { author, url } = useSiteMetadata();
+  const metaImage = author.cover || thumbnail;
   const metaImageUrl = url + metaImage;
 
   return (
@@ -27,6 +27,7 @@ const Layout = ({ children, title, subtitle, description, thumbnail = '' }: Prop
       <meta name="image" content={metaImageUrl} />
       <meta property="og:site_name" content={title} />
       <meta property="og:image" content={metaImageUrl} />
+      <meta property="og:image:alt" content={title} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
