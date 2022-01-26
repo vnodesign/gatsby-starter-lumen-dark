@@ -172,20 +172,7 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-gatsby-cloud`,
-    //   options: {
-    //     headers: {},    
-    //     allPageHeaders: [
-    //       "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
-    //     ],
-    //     mergeSecurityHeaders: true, // boolean to turn off the default security headers
-    //     mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-    //     mergeCachingHeaders: true, // boolean to turn off the default caching headers
-    //     transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-    //     generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-    //   },
-    // },
+    [`gatsby-plugin-gatsby-cloud`],
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
@@ -221,18 +208,18 @@ module.exports = {
         showSpinner: false,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-minify`,
-    //   options: {
-    //     collapseWhitespace: true,
-    //     minifyCSS: true,
-    //     minifyJS: true,
-    //     removeComments: true,
-    //     removeEmptyAttributes: true,
-    //     removeScriptTypeAttributes: true,
-    //     removeStyleLinkTypeAttributes: true,
-    //     processConditionalComments: true
-    //   }
-    // }
+    {
+      resolve: `gatsby-plugin-minify`,
+      options: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        processConditionalComments: true
+      }
+    }
   ],
 };
