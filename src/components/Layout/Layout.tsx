@@ -47,7 +47,7 @@ const Layout = (location, {children, title, subtitle, description, thumbnail = '
               "url":"${url}${author.photo}"
             }
             },
-            "description":"${subtitle}",
+            "description":"${description}",
             "headline":"${title}",
             "@type":"WebSite",
             "sameAs":[
