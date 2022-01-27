@@ -172,7 +172,7 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
-    [`gatsby-plugin-gatsby-cloud`],
+    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
@@ -208,18 +208,5 @@ module.exports = {
         showSpinner: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-minify`,
-      options: {
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-        removeComments: true,
-        removeEmptyAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        processConditionalComments: true
-      }
-    }
   ],
 };
