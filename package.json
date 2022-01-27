@@ -100,7 +100,6 @@
     "eslint-watch": "7.0.0",
     "flow-bin": "0.163.0",
     "flow-typed": "3.4.0",
-    "gatsby-plugin-scss-typescript": "^5.1.0",
     "gatsby-plugin-webpack-speed-measure": "^0.1.1",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.3",
