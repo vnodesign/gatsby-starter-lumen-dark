@@ -208,5 +208,6 @@ module.exports = {
         showSpinner: false,
       },
     },
+    `gatsby-plugin-typescript`,
   ],
 };
