@@ -31,9 +31,8 @@
     font-weight: 600;
     text-align: center;
     @include line-height(1.65);
-    @include margin-top(0);
-    // @include margin-bottom(0);
-    margin-bottom: 0 !important;
+    @include margin-top(1);
+    @include margin-bottom(0);
   }
 
   &__body {
@@ -97,7 +96,7 @@
     &__title {
       font-size: 24.469px;
       @include line-height(2.25);
-      @include margin-top(0);
+      @include margin-top(2.25);
     }
 
     &__body {
@@ -108,7 +107,8 @@
       & p {
         font-size: $typographic-base-font-size * 1.125;
         @include line-height(1.125);
-        @include margin-bottom(1.125)
+        @include margin-top(1.125);
+        @include margin-bottom(1.125);
       }
 
     }

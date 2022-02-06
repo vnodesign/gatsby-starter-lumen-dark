@@ -24,7 +24,7 @@
                 &:hover,
                 &:focus {
                     background: #0000000d;
-                    color: $color-primary;
+                    color: $color-base;
                 }
             }
         }
@@ -38,6 +38,7 @@
                     &:hover,
                     &:focus {
                         background: $nav-bar-background !important;
+                        color: $color-white !important;
                     }
                 }
             }

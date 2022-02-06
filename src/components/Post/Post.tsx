@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Comments from "./Comments";
+import Comments from "../Facebook/Comments";
 import Content from "./Content";
 import Tags from "./Tags";
 
@@ -20,11 +20,11 @@ type Props = {
   const { tags, title, date, authorName, fbCommentUrl } = post.frontmatter;
   return (
     <article className={styles.post} itemScope itemType="http://schema.org/Article">
-      <div className={styles.post__thumbnail}>
+      {/* <div className={styles.post__thumbnail}>
       <img src={post.frontmatter.thumbnail} decoding="async" loading="lazy" alt={title} width="600" height="400" />
-      </div>
-      <Link className={styles.post__homeButton} to="/" onClick={() => gtagTrack("HomeLink", "click", "home")} title="Back to home">Back</Link>
-      <div className={styles.post__content}>
+      </div> */}
+      <Link className={styles.post__homeButton} to="/" onClick={() => gtagTrack("HomeLink", "click", "home")} title="Back to home">← Back</Link>
+      <div>
         <Content authorName={authorName} date={date} body={html} title={title} />
       </div>
 

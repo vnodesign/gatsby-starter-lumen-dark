@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Feed = ({ edges }: Props) => (
-  <div className={styles.feed}>
+  <div>
     {edges.map((edge) => (
       <article className={styles.feed__item} key={edge.node.fields.slug} itemScope itemType="http://schema.org/Article">
         <Link className={styles.feed__itemThumbnail} to={edge.node.fields.slug} onClick={() => gtagTrack('ThumbLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title}><img itemProp="image" src={edge.node.frontmatter.thumbnail} decoding="async" loading="lazy" alt={edge.node.frontmatter.title} width="600" height="400" /></Link>

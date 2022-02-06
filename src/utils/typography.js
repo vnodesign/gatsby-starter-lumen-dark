@@ -42,7 +42,7 @@ const _options = {
       marginTop: space[9]
     },
     'h4, h5, h6': { fontSize: fontSizes[3] },
-    'h5, h6': { fontWeight: fontWeights['body'] },
+    'h5, h6': { fontWeight: fontWeights.body },
     // h6: { fontSize: fontSizes[2] },
     blockquote: {
       paddingLeft: space[6],
@@ -64,13 +64,12 @@ const _options = {
       lineHeight: 'inherit'
     },
     'h1 code, h2 code, h3 code, h4 code, h5 code, h6 code': {
-      fontWeight: fontWeights['body'],
+      fontWeight: fontWeights.body,
       fontSize: '82.5%'
     },
     'tt, code, kbd': {
       background: colors.code.bgInline,
-      paddingTop: '0.2em',
-      paddingBottom: '0.2em'
+      padding: '0.2em 0 0.2em 0'
     },
     'tt, code, kbd, .gatsby-code-title': {
       fontFamily: fonts.monospace,
@@ -183,10 +182,8 @@ const _options = {
     },
     '.gatsby-highlight-code-line': {
       background: colors.code.border,
-      marginLeft: `-${space[6]}`,
-      marginRight: `-${space[6]}`,
-      paddingLeft: space[5],
-      paddingRight: space[6],
+      margin: `0 -${space[6]} 0 -${space[6]}`,
+      padding: `0 ${space[5]} 0 ${space[6]}`,
       borderLeft: `${space[1]} solid ${colors.code.lineHighlightBorder}`,
       display: 'block'
     },
@@ -234,8 +231,7 @@ const _options = {
     '.post-body figcaption': {
       color: colors.text.secondary,
       fontSize: '87.5%',
-      marginTop: space[1],
-      marginBottom: space[3]
+      margin: `${space[1]} 0 ${space[3]} 0`
     },
     //
     '.main-body a.anchor': {
@@ -250,18 +246,15 @@ const _options = {
     // gatsby-image
     '.main-body a.gatsby-resp-image-link': {
       borderBottom: 'transparent',
-      marginTop: space[9],
-      marginBottom: space[9]
+      margin: `${space[9]} 0 ${space[9]} 0`
     },
     '.main-body figure a.gatsby-resp-image-link': {
       borderBottom: 'transparent',
-      marginTop: space[9],
-      marginBottom: 0
+      margin: `${space[9]} 0`
     },
-    '.gatsby-highlight, .gatsby-code-title, .post-body .gatsby-resp-image-link': {
-      marginLeft: `-${space[6]}`,
-      marginRight: `-${space[6]}`
-    },
+    // '.gatsby-highlight, .gatsby-code-title, .post-body .gatsby-resp-image-link': {
+    //   margin: `0 -${space[6]} 0 -${space[6]}`
+    // },
     '.gatsby-resp-image-link': {
       borderRadius: `${radii[1]}`,
       overflow: 'hidden'
@@ -278,8 +271,7 @@ const _options = {
     },
     [mediaQueries.md]: {
       '.gatsby-highlight, .gatsby-resp-image-link, .gatsby-code-title': {
-        marginLeft: 0,
-        marginRight: 0,
+        // margin: 0,
         borderRadius: `${radii[2]}`
       },
       '.gatsby-code-title': {
@@ -332,10 +324,10 @@ const _options = {
       color: colors.code.cssString
     },
     '.token.important': {
-      fontWeight: fontWeights['body']
+      fontWeight: fontWeights.body
     },
     '.token.bold': {
-      fontWeight: fontWeights['bold']
+      fontWeight: fontWeights.bold
     },
     '.token.italic': {
       fontStyle: 'italic'

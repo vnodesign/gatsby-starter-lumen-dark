@@ -17,16 +17,12 @@
     //   @include margin-bottom(0.5);
     // }
 
-    &Meta {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-
     &Title {
       font-size: $typographic-base-font-size * 1.6875;
       @include line-height(1.5);
-      @include margin-top(0);
+      // @include margin-top(0);
       // @include margin-bottom(0.5);
+      margin: 3.2px 0 3.2px 0;
       padding-right: 16px;
       padding-left: 16px;
 
@@ -43,7 +39,7 @@
     &Description {
       font-size: $typographic-base-font-size;
       @include line-height(1);
-      @include margin-bottom(0.75);
+      @include margin-bottom(0.12);
       padding-right: 16px;
       padding-left: 16px;
     }
@@ -62,7 +58,9 @@
     }
 
     &Meta {
-
+      padding-right: 16px;
+      padding-left: 16px;
+      margin: 3.2px 0 3.2px 0;
       &-time {
         font-size: $typographic-small-font-size;
         color: $color-base;

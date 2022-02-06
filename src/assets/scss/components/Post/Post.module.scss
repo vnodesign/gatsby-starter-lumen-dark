@@ -10,15 +10,15 @@
     padding-bottom: 30px;
   }
 
-  &__thumbnail {
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      max-height: 400px;
-      object-position: 0;
-    }
-  }
+  // &__thumbnail {
+  //   img {
+  //     width: 100%;
+  //     height: auto;
+  //     object-fit: cover;
+  //     max-height: 400px;
+  //     object-position: 0;
+  //   }
+  // }
 
   &__comments {
     max-width: $layout-post-width;
@@ -42,12 +42,13 @@
     margin-right: auto;
     @include margin-top(1);
     @include margin-bottom(1);
-    background: $color-white;
+    background: #e4e6eb;
     z-index: 999;
 
     &:hover,
     &:focus {
-      color: $color-primary;
+      background: #0000000d;
+      color: $color-base;
     }
 
   }
@@ -83,6 +84,11 @@
     &__homeButton {
       color: $color-white !important;
       background: $comment-background !important;
+      &:hover,
+      &:focus {
+        color: $color-white !important;
+        background: $nav-bar-background !important;
+    }
     }
 
     h2 {

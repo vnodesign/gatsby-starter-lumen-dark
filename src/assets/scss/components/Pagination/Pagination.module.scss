@@ -11,7 +11,7 @@
 
     &Link {
       background: $color-primary;
-      border: 2px solid $color-primary;
+      box-shadow: $pagination-item-box-shadow;
       color: $color-white;
       padding: 4px 15px;
       display: inline-flex;
@@ -19,7 +19,7 @@
       justify-content: center;
       line-height: 1.5;
       transition: opacity .15s ease-in-out;
-      border-radius: 25px;
+      border-radius: $pagination-item-border-radius;
 
       &:hover,
       &:focus {
@@ -32,14 +32,28 @@
         opacity: .4;
         color: lighten($color-white, 20%);
         -moz-user-select: none !important;
-        -webkit-touch-callout: none!important;
-        -webkit-user-select: none!important;
-        -khtml-user-select: none!important;
-        -moz-user-select: none!important;
-        -ms-user-select: none!important;
-        user-select: none!important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        -khtml-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
       }
 
+    }
+
+    @media (prefers-color-scheme: dark) {
+      &Link {
+        background: $nav-bar-background !important;
+        color: $color-white;
+
+        &:hover,
+        &:focus,
+        &--disable {
+          color: $color-white !important;
+        }
+
+      }
     }
 
   }
@@ -50,7 +64,7 @@
 
     &Link {
       background: $color-primary;
-      border: 2px solid $color-primary;
+      box-shadow: $pagination-item-box-shadow;
       color: $color-white;
       padding: 4px 15px;
       display: inline-flex;
@@ -58,7 +72,7 @@
       justify-content: center;
       line-height: 1.5;
       transition: opacity .15s ease-in-out;
-      border-radius: 25px;
+      border-radius: $pagination-item-border-radius;
 
       &:hover,
       &:focus {
@@ -71,14 +85,28 @@
         pointer-events: none;
         color: lighten($color-white, 20%);
         -moz-user-select: none !important;
-        -webkit-touch-callout: none!important;
-        -webkit-user-select: none!important;
-        -khtml-user-select: none!important;
-        -moz-user-select: none!important;
-        -ms-user-select: none!important;
-        user-select: none!important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        -khtml-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
       }
 
+    }
+
+    @media (prefers-color-scheme: dark) {
+      &Link {
+        background: $nav-bar-background !important;
+        color: $color-white;
+
+        &:hover,
+        &:focus,
+        &--disable {
+          color: $color-white !important;
+        }
+
+      }
     }
 
   }

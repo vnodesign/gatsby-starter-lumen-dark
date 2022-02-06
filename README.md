@@ -1,18 +1,26 @@
-## Access Locally
+# Access Locally
+
+```bash
+
+git clone https://github.com/vnodesign/tuanducdesign.com && cd tuanducdesign.com
+yarn
+yarn develop
+
 ```
-$ git clone https://github.com/vnodesign/tuanducdesign.com && cd tuanducdesign.com
-$ yarn
-$ yarn develop
-```
+
 To test the CMS locally, you'll need run a production build of the site:
-```
-$ yarn build
-$ gatsby serve
+
+```sh
+
+yarn build
+gatsby serve
+
 ```
 
 ## Folder Structure
 
-```
+```text
+
 └── content
     ├── pages
     └── posts
@@ -23,17 +31,24 @@ $ gatsby serve
     │   └── scss
     │       ├── base
     │       └── mixins
+    │       └── components
+    │           ├── Feed
+    │           ├── Icon
+    │           ├── Layout
+    │           ├── Page
+    │           ├── Pagination
+    │           ├── Post
+    │           ├── Sidebar
     ├── components
+    │   ├── Facebook
+    │   │   ├── Comments
     │   ├── Feed
     │   ├── Icon
     │   ├── Layout
     │   ├── Page
     │   ├── Pagination
     │   ├── Post
-    │   │   ├── Author
-    │   │   ├── Comments
     │   │   ├── Content
-    │   │   ├── Meta
     │   │   └── Tags
     │   └── Sidebar
     │       ├── Author
@@ -47,9 +62,11 @@ $ gatsby serve
 ```
 
 ## Credits
+
 Nature graphic by [Anna Bearne](https://www.behance.net/annabearne) from [Noun Project](https://thenounproject.com/) is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode).
 
 ## License
+
 The MIT License (MIT)
 
 Copyright (c) 2022 Tuan Duc Tran

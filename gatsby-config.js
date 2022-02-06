@@ -123,7 +123,6 @@ module.exports = {
           },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-external-links',
           `gatsby-plugin-remove-fingerprints`,
@@ -203,6 +202,7 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
+    'gatsby-plugin-purgecss',
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
