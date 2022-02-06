@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
-import * as styles from './Page.module.scss';
+import React from 'react';
+import * as styles from '../../assets/scss/components/Page/Page.module.scss';
 
 type Props = {
   title?: string,
@@ -7,17 +7,12 @@ type Props = {
 };
 
 const Page = ({ title, children }: Props) => {
-  const pageRef = useRef();
-
-  // useEffect(() => {
-  //   pageRef.current.scrollIntoView();
-  // });
 
   return (
-    <div ref={pageRef} className={styles['page']} itemScope itemType="https://schema.org/Blog">
-      <div className={styles['page__inner']}>
-        { title && <h1 className={styles['page__title']}>{title}</h1>}
-        <div className={styles['page__body']}>{children}</div>
+    <div className={styles.page} itemScope itemType="https://schema.org/Blog">
+      <div className={styles.page__inner}>
+        { title && <h1 className={styles.page__title}>{title}</h1>}
+        <div className={styles.page__body}>{children}</div>
       </div>
     </div>
   );

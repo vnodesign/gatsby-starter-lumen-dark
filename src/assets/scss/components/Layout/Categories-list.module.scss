@@ -1,7 +1,11 @@
-@import "../../../assets/scss/variables";
-@import "../../../assets/scss/mixins";
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
 
-.tags {
+.categoriesListPage {
+    lost-center: $layout-width;
+}
+
+.categoriesList {
     display: inline-block;
 
     @include margin-bottom(0.5);
@@ -13,6 +17,7 @@
 
         &Item {
             display: inline-block;
+
             &Link {
                 margin: 5px;
                 background: #e4e6eb;
@@ -23,23 +28,24 @@
                 &:hover,
                 &:focus {
                     background: #0000000d;
-                    color: $color-primary;
+                    color: $color-white;
                 }
             }
         }
+
         @media (prefers-color-scheme: dark) {
             &Item {
                 &Link {
-                    background: var(--comment-background) !important;
-                    color: var(--always-white) !important;
-    
+                    background: $comment-background !important;
+                    color: $color-white !important;
+
                     &:hover,
                     &:focus {
-                        background: var(--nav-bar-background) !important;
-                        color: $color-primary !important;
+                        background: $nav-bar-background !important;
+                        color: $color-white !important;
                     }
                 }
             }
-          }
+        }
     }
 }

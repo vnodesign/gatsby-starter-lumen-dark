@@ -1,7 +1,7 @@
 /**
  * Generic
  */
- html {
+html {
   font-size: $typographic-root-font-size;
 }
 
@@ -21,8 +21,9 @@ body {
 
 html,
 body {
-  background: $body-background;
+  background: $body-background-light;
   scroll-behavior: smooth;
+  transition: all 0.3s ease;
 }
 
 h1,
@@ -81,7 +82,8 @@ img {
   border: 0;
   max-width: 100%;
   display: block;
-  margin: inherit auto;
+  margin: inherit;
+  transition: all 0.3s ease;
 }
 
 hr {
@@ -101,6 +103,7 @@ hr {
 a {
   color: $typographic-link-p-font-color;
   text-decoration: none;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus,
@@ -116,7 +119,7 @@ strong {
 }
 
 ul {
-  list-style: number;
+  list-style: none;
   //@include margin-bottom(1);
 
   // & li {
@@ -159,6 +162,7 @@ figcaption {
 }
 
 @include breakpoint-sm {
+
   figure.float-left,
   figure.float-right {
     max-width: 310px;
@@ -176,63 +180,67 @@ figcaption {
 }
 
 @media (prefers-color-scheme: dark) {
-    html,
-    body {
-      background-color: var(--web-wash) !important;
-      color: var(--always-white) !important;
-    }
-  
-    hr {
-      color: var(--comment-background) !important;
-      background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, var(--comment-background) 11px, var(--comment-background) 15px, transparent 15px, transparent 10px);
-    }
-  
-    a {
-      color: var(--always-white) !important;
-  
-      &:hover,
-      &:focus,
-      &:active {
-        color: $color-primary !important;
-      }
-    }
-  
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    figcaption {
-      color: var(--always-white) !important;
-    }
-  
-    img {
-      filter: brightness(70%);
-    }
-  
-    .gatsby-highlight {
-      background: var(--comment-background) !important;
-      pre {
-        &::-webkit-scrollbar-thumb {
-          background: var(--nav-bar-background) !important;
-        }
-        &::-webkit-scrollbar-track {
-          background: var(--comment-background) !important;
-        }
-        .token {
-          color: var(--always-white) !important;
-        }
-      }
-    }
-    
-    path {
-      fill: var(--always-white) !important;
-    }
-    
-    tt,
-    code,
-    kbd {
-      background: var(--comment-background) !important;
+
+  html,
+  body {
+    background-color: $body-background-dark !important;
+    color: $color-white !important;
+  }
+
+  hr {
+    color: $color-white !important;
+    background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $comment-background 11px, $comment-background 15px, transparent 15px, transparent 10px);
+  }
+
+  a {
+    color: $color-white !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-primary !important;
     }
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  figcaption {
+    color: $color-white !important;
+  }
+
+  img {
+    filter: brightness(70%);
+  }
+
+  .gatsby-highlight {
+    background: $comment-background !important;
+
+    pre {
+      &::-webkit-scrollbar-thumb {
+        background: $nav-bar-background !important;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $comment-background !important;
+      }
+
+      .token {
+        color: $color-white !important;
+      }
+    }
+  }
+
+  path {
+    fill: $color-white !important;
+  }
+
+  tt,
+  code,
+  kbd {
+    background: $comment-background !important;
+  }
+}

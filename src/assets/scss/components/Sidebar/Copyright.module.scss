@@ -1,13 +1,14 @@
-@import '../../../assets/scss/variables';
-@import '../../../assets/scss/mixins';
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
 
 .copyright {
   color: $color-base;
   font-size: $typographic-small-font-size;
   text-align: center;
 }
+
 @media (prefers-color-scheme: dark) {
   .copyright {
-    color: var(--always-white) !important;
+    color: $color-white !important;
   }
 }

@@ -1,7 +1,8 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import * as styles from '../assets/scss/components/Layout/Tags.module.scss';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
@@ -30,11 +31,14 @@ const TagTemplate = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
   return (
+    <div className={styles.tags}>
     <Layout title={pageTitle} description={siteSubtitle}>
+      <HelmetProvider>
       <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="noindex, follow" />
       </Helmet>
+      </HelmetProvider>
       <Sidebar />
       <Page title={tag}>
         <Feed edges={edges} />
@@ -46,6 +50,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
         />
       </Page>
     </Layout>
+    </div>
   );
 };
 

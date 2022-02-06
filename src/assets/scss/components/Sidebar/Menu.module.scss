@@ -1,10 +1,12 @@
-@import "../../../assets/scss/variables";
-@import "../../../assets/scss/mixins";
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
 
 .menu {
   @include margin-bottom(1);
   overflow: auto;
   white-space: nowrap;
+  text-align: center;
+
   &__list {
     display: inline-block;
     list-style: none;
@@ -35,13 +37,14 @@
         }
 
         &Active {
-          color: rgba(0,0,0,0.9);
+          color: rgba(0, 0, 0, 0.9);
         }
       }
+
       @media (prefers-color-scheme: dark) {
         &Link {
           color: var(--always-white) !important;
-  
+
           &:hover,
           &:focus,
           &Active {
@@ -50,5 +53,16 @@
         }
       }
     }
+  }
+}
+@include breakpoint-sm {
+  .menu {
+      text-align: left;
+  }
+}
+
+@include breakpoint-md {
+  .menu {
+    text-align: left;
   }
 }

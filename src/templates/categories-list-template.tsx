@@ -2,7 +2,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import kebabCase from "lodash/kebabCase";
-import Helment from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import * as styles from '../assets/scss/components/Layout/Categories-list.module.scss';
 import Sidebar from "../components/Sidebar";
 import Layout from "../components/Layout";
 import Page from "../components/Page";
@@ -13,24 +14,28 @@ const CategoriesListTemplate = () => {
   const categories = useCategoriesList();
 
   return (
+    <div className={styles.categoriesListPage}>
     <Layout title={`Categories - ${title}`} description={subtitle}>
-      <Helment>
+      <HelmetProvider>
+      <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      </Helment>
+      </Helmet>
+      </HelmetProvider>
       <Sidebar />
       <Page title="Categories">
-        <ul>
+      <div className={styles.categoriesList}>
+        <ul className={styles.categoriesList__list}>
           {categories.map((category) => (
-            <li key={category.fieldValue}>
-              <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
-                {category.fieldValue}
-              </Link>
+            <li className={styles.categoriesList__listItem} key={category.fieldValue}>
+              <Link to={`/category/${kebabCase(category.fieldValue)}/`} className={styles.categoriesList__listItemLink} title={category.fieldValue}>{category.fieldValue}</Link>
             </li>
           ))}
         </ul>
+      </div>
       </Page>
     </Layout>
+    </div>
   );
 };
 

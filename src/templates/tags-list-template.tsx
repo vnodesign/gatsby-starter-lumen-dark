@@ -1,7 +1,8 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import * as styles from '../assets/scss/components/Layout/Tags-list.module.scss';
 import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
@@ -9,28 +10,32 @@ import Page from '../components/Page';
 import { useSiteMetadata, useTagsList } from '../hooks';
 
 const TagsListTemplate = () => {
-  const { url, author, title, subtitle } = useSiteMetadata();
+  const { title, subtitle } = useSiteMetadata();
   const tags = useTagsList();
 
   return (
+    <div className={styles.tags}>
     <Layout title={`Tags - ${title}`} description={subtitle}>
+      <HelmetProvider>
       <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="follow, noindex" />
       </Helmet>
+      </HelmetProvider>
       <Sidebar />
       <Page title="Tags">
-        <ul>
+      <div className={styles.tags__tagsList}>
+        <ul className={styles.tags__tagsList__list}>
           {tags.map((tag) => (
-            <li key={tag.fieldValue}>
-              <Link to={`/tag/${kebabCase(tag.fieldValue)}/`} title={tag.fieldValue}>
-                {tag.fieldValue}
-              </Link>
+            <li className={styles.tags__tagsList__listItem} key={tag.fieldValue}>
+              <Link to={`/tag/${kebabCase(tag.fieldValue)}/`} className={styles.tags__tagsList__listItemLink} title={tag.fieldValue}>{tag.fieldValue}</Link>
             </li>
           ))}
         </ul>
+      </div>
       </Page>
     </Layout>
+    </div>
   );
 };
 

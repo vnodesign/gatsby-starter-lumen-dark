@@ -4,7 +4,7 @@ import Author from "./Author";
 import Contacts from "./Contacts";
 import Menu from "./Menu";
 import Copyright from "./Copyright";
-import * as styles from "./Sidebar.module.scss";
+import * as styles from "../../assets/scss/components/Sidebar/Sidebar.module.scss";
 import { useSiteMetadata } from "../../hooks";
 
 type Props = {

@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import { PAGINATION } from '../../constants';
 import { gtagTrack } from '../../utils';
 
-import * as styles from './Pagination.module.scss';
+import * as styles from '../../assets/scss/components/Pagination/Pagination.module.scss';
 
 type Props = {
   prevPagePath: string,
@@ -33,11 +33,11 @@ const Pagination = ({
   });
 
   return (
-    <nav className={styles['pagination']} role="navigation" aria-label="Posts">
-      <div className={styles['pagination__prev']}>
+    <nav className={styles.pagination} role="navigation" aria-label="Posts">
+      <div className={styles.pagination__prev}>
         <Link rel="prev" to={hasPrevPage ? prevPagePath : '/'} className={prevClassName} onClick={() => gtagTrack('Pagination', 'click', 'PRE_PAGE', { page: prevPagePath })} title={PAGINATION.PREV_PAGE}>{PAGINATION.PREV_PAGE}</Link>
       </div>
-      <div className={styles['pagination__next']}>
+      <div className={styles.pagination__next}>
         <Link rel="next" to={hasNextPage ? nextPagePath : '/'} className={nextClassName} onClick={() => gtagTrack('Pagination', 'click', 'NEXT_PAGE', { page: nextPagePath })} title={PAGINATION.NEXT_PAGE}>{PAGINATION.NEXT_PAGE}</Link>
       </div>
     </nav>

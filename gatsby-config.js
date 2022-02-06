@@ -141,36 +141,7 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        workboxConfig: {
-          runtimeCaching: [{
-            // Use cacheFirst since these don't need to be revalidated (same RegExp
-            // and same reason as above)
-            urlPattern: /(\.js$|\.css$|[^:]static\/)/,
-            handler: 'CacheFirst',
-          },
-          {
-            // page-data.json files, static query results and app-data.json
-            // are not content hashed
-            urlPattern: /^https?:.*\/page-data\/.*\.json/,
-            handler: 'StaleWhileRevalidate',
-          },
-          {
-            // Add runtime caching of various other page resources
-            urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-            handler: 'StaleWhileRevalidate',
-          },
-          {
-            // Google Fonts CSS (doesn't end in .css so we need to specify it)
-            urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-            handler: 'StaleWhileRevalidate',
-          },
-          ],
-        },
-      },
-    },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
@@ -218,15 +189,19 @@ module.exports = {
     'gatsby-plugin-no-sourcemaps',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet-async`,
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require('sass'),
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
-          camelCase: false
-        }
-      }
+          camelCase: false,
+        },
+        // Override the file regex for Sass
+        sassRuleTest: /\.s(a|c)ss$/,
+        // Override the file regex for CSS modules
+        sassRuleModulesTest: /\.module\.s(a|c)ss$/,
+      },
     },
     `gatsby-plugin-gatsby-cloud`,
     {
@@ -272,6 +247,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-split-css`,
-    'gatsby-plugin-scss-typescript',
   ],
 };

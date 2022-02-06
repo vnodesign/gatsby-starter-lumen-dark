@@ -1,9 +1,8 @@
 // @flow strict
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import type { Node as ReactNode } from 'react';
 import { useSiteMetadata } from '../../hooks';
-import * as styles from './Layout.module.scss';
 
 type Props = {
   children: ReactNode,
@@ -19,7 +18,8 @@ const Layout = ({children, title, subtitle, description, thumbnail = '' }: Props
   const metaImageUrl = url + metaImage;
   const appID = facebookComment.appId;
   return (
-  <div className={styles.layout}>
+  <div>
+    <HelmetProvider>
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
@@ -59,6 +59,7 @@ const Layout = ({children, title, subtitle, description, thumbnail = '' }: Props
         }`}
       </script>
     </Helmet>
+    </HelmetProvider>
     {children}
   </div>
   );

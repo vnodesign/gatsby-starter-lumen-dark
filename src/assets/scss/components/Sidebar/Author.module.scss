@@ -1,13 +1,15 @@
-@import '../../../assets/scss/variables';
-@import '../../../assets/scss/mixins';
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
 
 .author {
   text-align: center;
+
   &__photo {
     display: inline-block;
     margin-bottom: 0;
     border-radius: 50%;
-    background-clip: padding-box
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
   }
 
   &__title {
@@ -33,9 +35,10 @@
     @include line-height(1);
     @include margin-bottom(1)
   }
+
   @media (prefers-color-scheme: dark) {
     &__subtitle {
-      color: var(--always-white) !important;
+      color: $color-white !important;
     }
   }
 

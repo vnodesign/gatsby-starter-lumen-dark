@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
@@ -30,6 +30,7 @@ const PostTemplate = ({ data }: Props) => {
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} thumbnail={thumbnailUrl}>
+      <HelmetProvider>
       <Helmet>
           { showschema && (
           <script type="application/ld+json">
@@ -58,7 +59,8 @@ const PostTemplate = ({ data }: Props) => {
           ) }
           <meta property="og:type" content="article"/>
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        </Helmet>
+      </Helmet>
+      </HelmetProvider>
       <Post post={data.markdownRemark} />
     </Layout>
   );

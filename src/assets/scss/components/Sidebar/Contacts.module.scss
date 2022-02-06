@@ -1,8 +1,9 @@
-@import '../../../assets/scss/variables';
-@import '../../../assets/scss/mixins';
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
 
 .contacts {
   @include margin-bottom(1);
+
   &__list {
     justify-content: center;
     display: flex;
@@ -25,13 +26,14 @@
       width: $button-height;
       line-height: $button-height;
       border-radius: 50%;
-      border: 1px solid $color-gray-bg;
+      border: $contact-item-border-white;
+      transition: all 0.3s ease;
 
       &Link {
         border: 0;
         display: flex;
         color: $color-base;
-  
+
         &:hover,
         &:focus {
           color: $color-primary;
@@ -49,11 +51,13 @@
   .contacts {
     &__list {
       &Item {
-      border-color: var(--comment-background) !important;
+        border: $contact-item-border-black !important;
+
         &Link {
-          color: var(--always-white) !important;
+          color: $color-white !important;
+
         }
       }
     }
   }
-  }
+}

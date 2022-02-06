@@ -1,0 +1,51 @@
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
+
+.tags {
+    lost-center: $layout-width;
+    
+    &__tagsList {
+        display: inline-block;
+    
+        @include margin-bottom(0.5);
+    
+        &__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+    
+            &Item {
+                display: inline-block;
+    
+                &Link {
+                    margin: 5px;
+                    background: #e4e6eb;
+                    color: $color-base;
+                    padding: 5px 10px;
+                    border-radius: 25px;
+    
+                    &:hover,
+                    &:focus {
+                        background: #0000000d;
+                        color: $color-primary;
+                    }
+                }
+            }
+    
+            @media (prefers-color-scheme: dark) {
+                &Item {
+                    &Link {
+                        background: $comment-background !important;
+                        color: $color-white !important;
+    
+                        &:hover,
+                        &:focus {
+                            background: $nav-bar-background !important;
+                            color: $color-white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

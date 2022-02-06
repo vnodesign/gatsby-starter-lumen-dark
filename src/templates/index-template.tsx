@@ -1,7 +1,8 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import * as styles from '../assets/scss/components/Layout/Index.module.scss';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
@@ -31,11 +32,14 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
+    <div className={styles.indexPage}>
     <Layout title={pageTitle} description={siteSubtitle}>
+      <HelmetProvider>
         <Helmet>
           <meta property="og:type" content="website"/>
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         </Helmet>
+      </HelmetProvider>
       <Sidebar isIndex />
       <Page>
         <Feed edges={edges} />
@@ -44,9 +48,10 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
           nextPagePath={nextPagePath}
           hasPrevPage={hasPrevPage}
           hasNextPage={hasNextPage}
-        />
+          />
       </Page>
     </Layout>
+    </div>
   );
 };
 
