@@ -140,36 +140,7 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        workboxConfig: {
-          runtimeCaching: [{
-            // Use cacheFirst since these don't need to be revalidated (same RegExp
-            // and same reason as above)
-            urlPattern: /(\.js$|\.css$|[^:]static\/)/,
-            handler: 'CacheFirst',
-          },
-          {
-            // page-data.json files, static query results and app-data.json
-            // are not content hashed
-            urlPattern: /^https?:.*\/page-data\/.*\.json/,
-            handler: 'StaleWhileRevalidate',
-          },
-          {
-            // Add runtime caching of various other page resources
-            urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-            handler: 'StaleWhileRevalidate',
-          },
-          {
-            // Google Fonts CSS (doesn't end in .css so we need to specify it)
-            urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-            handler: 'StaleWhileRevalidate',
-          },
-          ],
-        },
-      },
-    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-advanced-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -203,20 +174,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-purgecss',
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-        allPageHeaders: [
-          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
-        ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-      },
-    },
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes} prefix="og: https://ogp.me/ns#">
+    <html {...props.htmlAttributes}>
       <head itemScope itemType="https://schema.org/WebSite">
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
