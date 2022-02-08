@@ -209,5 +209,6 @@ module.exports = {
     },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-split-css`,
+    `gatsby-plugin-preact`
   ],
 };
