@@ -5,17 +5,17 @@
 
   // &__itemMetaCategoryLink {}
   &__item {
-    @include margin-bottom(1.25);
+    @include margin(0, 0, 1.25);
     background-color: $color-white;
     border-radius: $feed-item-border-radius;
     box-shadow: $feed-item-box-shadow;
-    padding: 0 0 16px 0;
+    padding: 0 0 16px;
     // padding-top: 5px;
     transition: all 0.3s ease;
 
-    // &:last-child {
-    //   @include margin-bottom(0.5);
-    // }
+    &:last-child {
+      @include margin(0, 0, 0.5);
+    }
 
     &Title {
       font-size: $typographic-base-font-size * 1.6875;
@@ -23,8 +23,7 @@
       // @include margin-top(0);
       // @include margin-bottom(0.5);
       margin: 3.2px 0 3.2px 0;
-      padding-right: 16px;
-      padding-left: 16px;
+      padding: 0 16px 0 16px;
 
       &Link {
         color: $color-base;
@@ -39,9 +38,8 @@
     &Description {
       font-size: $typographic-base-font-size;
       @include line-height(1);
-      @include margin-bottom(0.12);
-      padding-right: 16px;
-      padding-left: 16px;
+      @include margin(0, 0, 0.12);
+      padding: 0 16px 0 16px;
     }
 
     &Thumbnail {
@@ -58,8 +56,7 @@
     }
 
     &Meta {
-      padding-right: 16px;
-      padding-left: 16px;
+      padding: 0 16px 0 16px;
       margin: 3.2px 0 3.2px 0;
       &-time {
         font-size: $typographic-small-font-size;

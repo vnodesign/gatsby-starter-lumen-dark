@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import * as styles from '../assets/scss/components/Layout/Tags-list.module.scss';
 import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
@@ -16,12 +16,10 @@ const TagsListTemplate = () => {
   return (
     <div className={styles.tags}>
     <Layout title={`Tags - ${title}`} description={subtitle}>
-      <HelmetProvider>
       <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="follow, noindex" />
       </Helmet>
-      </HelmetProvider>
       <Sidebar />
       <Page title="Tags">
       <div className={styles.tags__tagsList}>

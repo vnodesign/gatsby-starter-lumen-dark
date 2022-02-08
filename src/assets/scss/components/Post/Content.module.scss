@@ -13,7 +13,7 @@
     font-size: 15.5px;
     font-weight: 400;
     text-align: center;
-    @include margin-bottom(1);
+    @include margin(0, 0, 1);
   }
 
   &__divider {
@@ -31,25 +31,23 @@
     font-weight: 600;
     text-align: center;
     @include line-height(1.65);
-    @include margin-top(1);
-    @include margin-bottom(0);
+    @include margin(1, 0, 0);
   }
 
   &__body {
     & figure {
-      @include margin-bottom(1);
+      @include margin(0, 0, 1);
 
       & blockquote {
         font-style: italic;
         text-align: center;
         margin-top: 0;
-        @include padding(1, 0);
+        @include padding(1, 0, 0);
 
         & p {
           max-width: $layout-post-width;
           font-size: $typographic-base-font-size * 1.6817;
-          margin-top: 0;
-          @include margin-bottom(1);
+          @include margin(0, 0, 1);
           @include line-height(1.5)
         }
 
@@ -96,19 +94,18 @@
     &__title {
       font-size: 24.469px;
       @include line-height(2.25);
-      @include margin-top(2.25);
+      @include margin(2.25, 0, 0);
     }
 
     &__body {
       font-size: $typographic-base-font-size * 1.125;
       @include line-height(1.125);
-      @include margin-bottom(1.125);
+      @include margin(0, 0, 1.125);
 
       & p {
         font-size: $typographic-base-font-size * 1.125;
         @include line-height(1.125);
-        @include margin-top(1.125);
-        @include margin-bottom(1.125);
+        @include margin(1.125, 0, 1.125, 0);
       }
 
     }

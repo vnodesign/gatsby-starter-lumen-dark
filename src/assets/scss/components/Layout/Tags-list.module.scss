@@ -7,7 +7,7 @@
     &__tagsList {
         display: inline-block;
     
-        @include margin-bottom(0.5);
+        @include margin(0, 0, 0.5);
     
         &__list {
             list-style: none;

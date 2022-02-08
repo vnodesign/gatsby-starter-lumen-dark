@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import * as styles from '../assets/scss/components/Layout/Categories.module.scss';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
@@ -35,12 +35,10 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   return (
     <div className={styles.categories}>
     <Layout title={pageTitle} description={siteSubtitle}>
-      <HelmetProvider>
       <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
-      </HelmetProvider>
       <Sidebar />
       <Page title={category}>
         <Feed edges={edges} />

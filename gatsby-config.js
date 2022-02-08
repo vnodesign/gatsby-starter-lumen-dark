@@ -115,7 +115,7 @@ module.exports = {
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
-            options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
+            options: { wrapperStyle: 'margin: 0 1.0725rem' },
           },
           {
             resolve: 'gatsby-remark-figure-caption',
@@ -158,7 +158,6 @@ module.exports = {
     'gatsby-plugin-no-sourcemaps',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-react-helmet-async`,
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -173,7 +172,6 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
-    'gatsby-plugin-purgecss',
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {

@@ -2,7 +2,7 @@
 @import "../../../../assets/scss/mixins";
 
 .pagination {
-  @include margin-top(2);
+  @include margin(2, 0, 0);
   display: flex;
 
   &__prev {

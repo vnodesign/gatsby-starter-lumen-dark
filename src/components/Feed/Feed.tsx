@@ -13,7 +13,7 @@ const Feed = ({ edges }: Props) => (
   <div>
     {edges.map((edge) => (
       <article className={styles.feed__item} key={edge.node.fields.slug} itemScope itemType="http://schema.org/Article">
-        <Link className={styles.feed__itemThumbnail} to={edge.node.fields.slug} onClick={() => gtagTrack('ThumbLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title}><img itemProp="image" src={edge.node.frontmatter.thumbnail} decoding="async" loading="lazy" alt={edge.node.frontmatter.title} width="600" height="400" /></Link>
+        <Link className={styles.feed__itemThumbnail} to={edge.node.fields.slug} onClick={() => gtagTrack('ThumbLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title}><img itemProp="image" src={edge.node.frontmatter.thumbnail} decoding="async" loading="eager" alt={edge.node.frontmatter.title} width="600" height="400" /></Link>
         <div className={styles.feed__itemMeta}>
             <span className={styles.feed__itemMetaAuthor} itemProp="author" itemScope itemType="https://schema.org/Person"><Link to="/" title={edge.node.frontmatter.authorName} itemProp="url"><span itemProp="name">{edge.node.frontmatter.authorName}</span></Link></span>
             {/* <span className={styles.feed__itemMetaDivider} />

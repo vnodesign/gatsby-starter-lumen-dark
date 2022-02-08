@@ -2,7 +2,7 @@
 @import "../../../../assets/scss/mixins";
 
 .menu {
-  @include margin-bottom(1);
+  @include margin(0, 0, 1);
   overflow: auto;
   white-space: nowrap;
   text-align: center;

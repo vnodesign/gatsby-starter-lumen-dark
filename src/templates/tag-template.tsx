@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import * as styles from '../assets/scss/components/Layout/Tags.module.scss';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
@@ -33,12 +33,10 @@ const TagTemplate = ({ data, pageContext }: Props) => {
   return (
     <div className={styles.tags}>
     <Layout title={pageTitle} description={siteSubtitle}>
-      <HelmetProvider>
       <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="noindex, follow" />
       </Helmet>
-      </HelmetProvider>
       <Sidebar />
       <Page title={tag}>
         <Feed edges={edges} />

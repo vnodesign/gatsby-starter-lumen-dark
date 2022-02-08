@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import kebabCase from "lodash/kebabCase";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import * as styles from '../assets/scss/components/Layout/Categories-list.module.scss';
 import Sidebar from "../components/Sidebar";
 import Layout from "../components/Layout";
@@ -16,12 +16,10 @@ const CategoriesListTemplate = () => {
   return (
     <div className={styles.categoriesListPage}>
     <Layout title={`Categories - ${title}`} description={subtitle}>
-      <HelmetProvider>
       <Helmet>
       <meta property="og:type" content="article"/>
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
-      </HelmetProvider>
       <Sidebar />
       <Page title="Categories">
       <div className={styles.categoriesList}>

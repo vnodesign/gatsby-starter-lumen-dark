@@ -2,7 +2,7 @@
 @import "../../../../assets/scss/mixins";
 
 .contacts {
-  @include margin-bottom(1);
+  @include margin(0, 0, 1);
 
   &__list {
     justify-content: center;

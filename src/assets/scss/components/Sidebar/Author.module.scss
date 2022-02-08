@@ -6,7 +6,7 @@
 
   &__photo {
     display: inline-block;
-    margin-bottom: 0;
+    margin: 0;
     border-radius: 50%;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -33,7 +33,7 @@
   &__subtitle {
     color: $color-gray;
     @include line-height(1);
-    @include margin-bottom(1)
+    @include margin(0, 0, 1)
   }
 
   @media (prefers-color-scheme: dark) {

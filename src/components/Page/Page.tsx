@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import * as styles from '../../assets/scss/components/Page/Page.module.scss';
 
 type Props = {
   title?: string,
-  children: React.Node
+  children: ReactNode
 };
 
 const Page = ({ title, children }: Props) => {
