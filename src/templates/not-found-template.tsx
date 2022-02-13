@@ -6,15 +6,18 @@ import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
+import { useLocation } from '@reach/router';
 
 const NotFoundTemplate = () => {
-  const { title, subtitle } = useSiteMetadata();
+  const { title, description, url } = useSiteMetadata();
+  const location = useLocation();
 
   return (
     <div className={styles.notFound}>
-    <Layout title={`Not Found - ${title}`} description={subtitle}>
+    <Layout title={`Not Found - ${title}`} description={description}>
       <Helmet>
       <meta property="og:type" content="article"/>
+      <meta property="og:url" content={`${url}${location.pathname}`}/>
       <meta name="robots" content="follow, noindex" />
       </Helmet>
       <Sidebar />

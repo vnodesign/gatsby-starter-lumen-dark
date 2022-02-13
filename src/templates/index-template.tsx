@@ -17,7 +17,7 @@ type Props = {
 };
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, subtitle: siteSubtitle, description: siteDescription, url: siteUrl } = useSiteMetadata();
 
   const {
     currentPage,
@@ -29,13 +29,14 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
+  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : `${siteTitle} - ${siteSubtitle}`;
 
   return (
     <div className={styles.indexPage}>
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteDescription}>
         <Helmet>
           <meta property="og:type" content="website"/>
+          <meta property="og:url" content={siteUrl}/>
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         </Helmet>
       <Sidebar isIndex />

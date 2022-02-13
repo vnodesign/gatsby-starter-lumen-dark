@@ -8,16 +8,19 @@ import Sidebar from "../components/Sidebar";
 import Layout from "../components/Layout";
 import Page from "../components/Page";
 import { useSiteMetadata, useCategoriesList } from "../hooks";
+import { useLocation } from '@reach/router';
 
 const CategoriesListTemplate = () => {
-  const { title, subtitle } = useSiteMetadata();
+  const { title, description, url } = useSiteMetadata();
   const categories = useCategoriesList();
+  const location = useLocation();
 
   return (
     <div className={styles.categoriesListPage}>
-    <Layout title={`Categories - ${title}`} description={subtitle}>
+    <Layout title={`Categories - ${title}`} description={description}>
       <Helmet>
       <meta property="og:type" content="article"/>
+      <meta property="og:url" content={`${url}${location.pathname}`}/>
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
       <Sidebar />
