@@ -5,5 +5,10 @@
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache",
+  ]
 }

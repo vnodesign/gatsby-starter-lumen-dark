@@ -2219,29 +2219,6 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@prefresh/babel-plugin@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@prefresh/babel-plugin/-/babel-plugin-0.4.1.tgz#c4e843f7c5e56c15f1185979a8559c893ffb4a35"
-  integrity sha512-gj3ekiYtHlZNz0zFI1z6a9mcYX80Qacw84+2++7V1skvO7kQoV2ux56r8bJkTBbKMVxwAgaYrxxIdUCYlclE7Q==
-
-"@prefresh/core@^1.3.1":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-1.3.2.tgz#97f966759b16e5f4c52361972e3c61ccac9ce396"
-  integrity sha512-Iv+uI698KDgWsrKpLvOgN3hmAMyvhVgn09mcnhZ98BUNdg/qrxE7tcUf5yFCImkgqED5/Dcn8G5hFy4IikEDvg==
-
-"@prefresh/utils@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@prefresh/utils/-/utils-1.1.1.tgz#ffe7f2e6bd48a0633631a3d92c0ee4bdeb0ac330"
-  integrity sha512-MUhT5m2XNN5NsZl4GnpuvlzLo6VSTa/+wBfBd3fiWUvHGhv0GF9hnA1pd//v0uJaKwUnVRQ1hYElxCV7DtYsCQ==
-
-"@prefresh/webpack@^3.3.2":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@prefresh/webpack/-/webpack-3.3.2.tgz#058c4d61d733a4a8c111486f8aa1ae9b89820d9c"
-  integrity sha512-1cX0t5G7IXWO2164sl2O32G02BzDl6C4UUZWfDb0x1CQM1g3It9PSLWd+rIlHfSg4MEU9YHM8e6/OK8uavRJhA==
-  dependencies:
-    "@prefresh/core" "^1.3.1"
-    "@prefresh/utils" "^1.1.0"
-
 "@sideway/address@^4.1.3":
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.3.tgz#d93cce5d45c5daec92ad76db492cc2ee3c64ab27"
@@ -2999,11 +2976,6 @@ accepts@^1.3.7, accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
   dependencies:
     mime-types "~2.1.34"
     negotiator "0.6.3"
-
-accessible-nprogress@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/accessible-nprogress/-/accessible-nprogress-2.1.2.tgz#8e65ebf4936db1752638e1cd2e8730f9bef311e9"
-  integrity sha512-reIwMbbt+ZGOmQLWPXGcPf5X1F4fzsZAekY9alCxpekxizRhQMAd/QInaA8k7WtwTcGMzD9hnYswGLcaJDRY/A==
 
 acorn-globals@^6.0.0:
   version "6.0.0"
@@ -6930,14 +6902,6 @@ gatsby-plugin-no-sourcemaps@^4.0.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-plugin-nprogress@^4.0.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-4.6.0.tgz#01e75136d6e1fd1d2eebff8fd31bf35f68857801"
-  integrity sha512-3hL+rQpS5WikxzODyE5hvzaQOKI34Da+RKNZfmMVsUIKSyCBLvkrkO1qEE5a/LmuxCLUXdZCwbVqEYPO8C/Iig==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    accessible-nprogress "^2.1.2"
-
 gatsby-plugin-offline@^5.4.0:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-5.6.0.tgz#d1d36140adf8b6cde45b48e1eb8146141b778ef6"
@@ -6967,16 +6931,6 @@ gatsby-plugin-page-creator@^3.14.0:
     gatsby-telemetry "^2.14.0"
     globby "^11.0.4"
     lodash "^4.17.21"
-
-gatsby-plugin-preact@^6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-6.7.0.tgz#d6e74e050b457ed9a8dc9b1511faa25c1d7eb9aa"
-  integrity sha512-zvP51wmcnDfN0z3vdYJ+S9fyuFXRKeTFeNwjuDE1KpRPEOJH5KdPvWVnVPXI1VFjTybuHLwSDxMvXJ19s0GVKg==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@gatsbyjs/webpack-hot-middleware" "^2.25.2"
-    "@prefresh/babel-plugin" "^0.4.1"
-    "@prefresh/webpack" "^3.3.2"
 
 gatsby-plugin-preconnect@^1.2.1:
   version "1.3.0"
