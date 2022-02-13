@@ -57,6 +57,7 @@ const PostTemplate = ({ data }: Props) => {
           </script>
           ) }
           <meta property="og:type" content="article"/>
+          <meta property="og:url" content={`${url}${posturl}`}/>
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
       <Post post={data.markdownRemark} />

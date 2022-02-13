@@ -10,6 +10,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import { AllMarkdownRemark, PageContext } from '../types';
+import { useLocation } from '@reach/router';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -17,7 +18,7 @@ type Props = {
 };
 
 const TagTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, description: siteDescription, url: siteUrl} = useSiteMetadata();
 
   const {
     tag,
@@ -30,11 +31,13 @@ const TagTemplate = ({ data, pageContext }: Props) => {
 
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
+  const location = useLocation();
   return (
     <div className={styles.tags}>
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteDescription}>
       <Helmet>
       <meta property="og:type" content="article"/>
+      <meta property="og:url" content={`${siteUrl}${location.pathname}`}/>
       <meta name="robots" content="noindex, follow" />
       </Helmet>
       <Sidebar />

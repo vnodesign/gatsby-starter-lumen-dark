@@ -4,7 +4,8 @@ module.exports = {
   url: 'https://tuanducdesign.com',
   pathPrefix: '/',
   title: 'Tuan Duc Design',
-  subtitle: 'Specialist page sharing knowledge related to VPS development and Website optimization.',
+  subtitle: 'Specialist site to share knowledge of VPS and Website',
+  description: 'Specialist page sharing knowledge related to VPS development and Website',
   copyright: '© tuanducdesign.com',
   facebookComment: {
     active: true,

@@ -27,6 +27,7 @@ const useSiteMetadata = () => {
             url
             title
             subtitle
+            description
             copyright
             facebookComment {
               active

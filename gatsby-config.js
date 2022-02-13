@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
+    description: siteConfig.description,
     copyright: siteConfig.copyright,
     facebookComment: siteConfig.facebookComment,
     menu: siteConfig.menu,
@@ -154,7 +155,7 @@ module.exports = {
         cache_busting_mode: 'none',
       },
     },
-        {
+    {
       resolve: 'gatsby-plugin-offline',
       options: {
         workboxConfig: {
@@ -223,8 +224,6 @@ module.exports = {
         siteUrl: `https://tuanducdesign.com`,
       },
     },
-    `gatsby-plugin-split-css`,
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-preact`
+    `gatsby-plugin-gatsby-cloud`
   ],
 };

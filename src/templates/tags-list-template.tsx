@@ -8,16 +8,18 @@ import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 import { useSiteMetadata, useTagsList } from '../hooks';
+import { useLocation } from '@reach/router';
 
 const TagsListTemplate = () => {
-  const { title, subtitle } = useSiteMetadata();
+  const { title, description, url} = useSiteMetadata();
   const tags = useTagsList();
-
+  const location = useLocation();
   return (
     <div className={styles.tags}>
-    <Layout title={`Tags - ${title}`} description={subtitle}>
+    <Layout title={`Tags - ${title}`} description={description}>
       <Helmet>
       <meta property="og:type" content="article"/>
+      <meta property="og:url" content={`${url}${location.pathname}`}/>
       <meta name="robots" content="follow, noindex" />
       </Helmet>
       <Sidebar />

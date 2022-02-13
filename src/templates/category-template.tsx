@@ -11,6 +11,7 @@ import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import { gtagTrack } from '../utils';
 import type { PageContext, AllMarkdownRemark } from '../types';
+import { useLocation } from '@reach/router';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -18,7 +19,7 @@ type Props = {
 };
 
 const CategoryTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { title: siteTitle, description: siteDescription, url: siteUrl } = useSiteMetadata();
   const {
     category,
     currentPage,
@@ -31,12 +32,14 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
   gtagTrack('CategoryList', 'view', 'category_list');
+  const location = useLocation();
 
   return (
     <div className={styles.categories}>
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteDescription}>
       <Helmet>
       <meta property="og:type" content="article"/>
+      <meta property="og:url" content={`${siteUrl}${location.pathname}`}/>
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
       <Sidebar />
