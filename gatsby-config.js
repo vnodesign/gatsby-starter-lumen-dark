@@ -140,7 +140,21 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-advanced-sitemap',
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: siteConfig.title,
+        short_name: siteConfig.title,
+        start_url: '/',
+        background_color: '#FFF',
+        theme_color: '#fe2c55',
+        display: 'standalone',
+        icon: 'static/tuanducdesign.jpg',
+        cache_busting_mode: 'none',
+      },
+    },
+        {
       resolve: 'gatsby-plugin-offline',
       options: {
         workboxConfig: {
@@ -168,20 +182,6 @@ module.exports = {
           },
           ],
         },
-      },
-    },
-    'gatsby-plugin-advanced-sitemap',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: siteConfig.title,
-        short_name: siteConfig.title,
-        start_url: '/',
-        background_color: '#FFF',
-        theme_color: '#fe2c55',
-        display: 'standalone',
-        icon: 'static/tuanducdesign.jpg',
-        cache_busting_mode: 'none',
       },
     },
     'gatsby-plugin-no-sourcemaps',
@@ -223,6 +223,8 @@ module.exports = {
         siteUrl: `https://tuanducdesign.com`,
       },
     },
-    `gatsby-plugin-split-css`
+    `gatsby-plugin-split-css`,
+    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-preact`
   ],
 };
