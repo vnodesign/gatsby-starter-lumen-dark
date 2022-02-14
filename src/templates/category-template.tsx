@@ -11,7 +11,7 @@ import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import { gtagTrack } from '../utils';
 import type { PageContext, AllMarkdownRemark } from '../types';
-import { useLocation } from '@reach/router';
+import { useLocation } from '@gatsbyjs/reach-router';
 
 type Props = {
   data: AllMarkdownRemark,

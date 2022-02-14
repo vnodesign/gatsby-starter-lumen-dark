@@ -10,7 +10,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import { AllMarkdownRemark, PageContext } from '../types';
-import { useLocation } from '@reach/router';
+import { useLocation } from '@gatsbyjs/reach-router';
 
 type Props = {
   data: AllMarkdownRemark,

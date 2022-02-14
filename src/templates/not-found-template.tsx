@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
-import { useLocation } from '@reach/router';
+import { useLocation } from '@gatsbyjs/reach-router';
 
 const NotFoundTemplate = () => {
   const { title, description, url } = useSiteMetadata();

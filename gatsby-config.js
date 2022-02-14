@@ -118,10 +118,6 @@ module.exports = {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin: 0 1.0725rem' },
           },
-          {
-            resolve: 'gatsby-remark-figure-caption',
-            options: { figureClassName: 'md-figure' },
-          },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
           'gatsby-remark-smartypants',
@@ -162,12 +158,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require('sass'),
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
-          camelCase: false
-        }
-      }
+          camelCase: false,
+        },
+        // Override the file regex for Sass
+        sassRuleTest: /\.s(a|c)ss$/,
+        // Override the file regex for CSS modules
+        sassRuleModulesTest: /\.module\.s(a|c)ss$/,
+      },
     },
     {
       resolve: `gatsby-plugin-google-adsense`,
@@ -194,7 +193,6 @@ module.exports = {
       options: {
         siteUrl: `https://tuanducdesign.com`,
       },
-    },
-    `gatsby-plugin-gatsby-cloud`
+    }
   ],
 };
