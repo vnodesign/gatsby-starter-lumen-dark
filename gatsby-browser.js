@@ -4,6 +4,7 @@
 'use strict';
 
 require('./src/assets/scss/init.scss');
+require('default-passive-events');
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(

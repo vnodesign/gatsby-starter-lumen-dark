@@ -25,6 +25,7 @@
     "classnames": "^2.3.1",
     "codecov": "^3.6.2",
     "core-js": "^3.0.0",
+    "default-passive-events": "^2.0.0",
     "gatsby": "^3.2.1",
     "gatsby-design-tokens": "^3.2.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
