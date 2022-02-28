@@ -149,6 +149,7 @@ module.exports = {
         display: 'standalone',
         icon: 'static/tuanducdesign.jpg',
         cache_busting_mode: 'none',
+        purpose: "any maskable"
       },
     },
     'gatsby-plugin-offline',
