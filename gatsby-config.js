@@ -193,6 +193,7 @@ module.exports = {
       options: {
         siteUrl: `https://tuanducdesign.com`,
       },
-    }
+    },
+    `gatsby-plugin-preact`
   ],
 };
