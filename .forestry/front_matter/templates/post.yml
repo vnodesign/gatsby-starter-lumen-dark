@@ -51,3 +51,5 @@ fields:
   label: description
   config:
     required: true
+pages:
+- content/posts/2022-01-09---kiem-tra-phien-ban-mongodb.md
