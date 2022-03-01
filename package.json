@@ -104,6 +104,8 @@
     "eslint-watch": "7.0.0",
     "flow-bin": "0.163.0",
     "flow-typed": "3.4.0",
+    "gatsby-plugin-perf-budgets": "^0.0.18",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.26",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.3",
     "jest-cli": "26.6.3",

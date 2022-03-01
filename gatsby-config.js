@@ -195,6 +195,13 @@ module.exports = {
         siteUrl: `https://tuanducdesign.com`,
       },
     },
-    `gatsby-plugin-preact`
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-perf-budgets`,
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
+      },
+    },
   ],
 };
