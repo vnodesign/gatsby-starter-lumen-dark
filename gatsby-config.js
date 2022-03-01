@@ -203,5 +203,6 @@ module.exports = {
         devMode: true,
       },
     },
+    'gatsby-plugin-minify-classnames',
   ],
 };
