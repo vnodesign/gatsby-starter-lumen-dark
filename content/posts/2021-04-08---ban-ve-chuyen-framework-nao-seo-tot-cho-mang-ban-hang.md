@@ -12,7 +12,6 @@ tags:
 slug: /2021/04/ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang
 thumbnail: "/images/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png"
 description: Bàn về chuyện Framework nào seo tốt cho mảng bán hàng, hiện nay có rất nhiều Framework được tạo ra kể đến có Shopify, Pretashop, Ecshop và Laravel.
-fbCommentUrl: /2021/04/ban-ve-chuyen-framework-nao-seo-tot-cho-mang-ban-hang
 ---
 
 Bàn về chuyện Framework nào seo tốt cho mảng bán hàng, hiện nay có rất nhiều Framework được tạo ra kể đến có Shopify, Pretashop, Ecshop, và Laravel.

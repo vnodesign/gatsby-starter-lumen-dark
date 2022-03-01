@@ -11,7 +11,6 @@ tags:
 slug: /2021/02/meo-toi-uu-website-khi-su-dung-facebook-plugins
 thumbnail: "/images/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg"
 description: Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.
-fbCommentUrl: /2021/02/meo-toi-uu-website-khi-su-dung-facebook-plugins
 ---
 
 Ở các bài viết trước mình đã hướng dẫn các bạn cách lazyload các scripts bên ba, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.

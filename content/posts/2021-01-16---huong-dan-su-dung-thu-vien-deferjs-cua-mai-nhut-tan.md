@@ -18,7 +18,6 @@ tags:
 slug: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan
 thumbnail: "/images/user-guide-for-deferjs-library-by-mai-nhut-tan.jpg"
 description: Đây là một thư viện hiệu suất nguyên bản siêu nhỏ để tải JS, CSS, hình ảnh, iframe . Trì hoãn hầu hết mọi thứ, dễ dàng tăng tốc trang web của bạn.
-fbCommentUrl: /2021/01/huong-dan-su-dung-thu-vien-deferjs-cua-mai-nhut-tan
 featured: true
 priceCurrency: VNĐ
 price: 0.00

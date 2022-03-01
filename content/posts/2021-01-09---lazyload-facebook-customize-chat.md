@@ -11,7 +11,6 @@ tags:
 slug: /2021/01/lazyload-facebook-customize-chat
 thumbnail: "/images/lazyload-facebook-customize-chat.jpg"
 description: Trong bài viết đầu tiên ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload Facebook Customize Chat để trang tải nhanh hơn.
-fbCommentUrl: /2021/01/lazyload-facebook-customize-chat
 ---
 
 Trong bài viết đầu tiên ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload Facebook Customize Chat để trang tải nhanh hơn.

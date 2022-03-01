@@ -12,10 +12,10 @@ type Props = {
 };
 
 const Layout = ({children, title, subtitle, description, thumbnail = '' }: Props) => {
-  const { author, url, facebookComment } = useSiteMetadata();
+  const { author, url, facebookApp } = useSiteMetadata();
   const metaImage = thumbnail || author.cover;
   const metaImageUrl = url + metaImage;
-  const appID = facebookComment.appId;
+  const appID = facebookApp.appId;
   return (
   <div>
     <Helmet>

@@ -1,6 +1,5 @@
 // @flow strict
 import React from 'react';
-import moment from 'moment';
 import { Link } from 'gatsby';
 import type { Edges } from '../../types';
 import { gtagTrack } from '../../utils';
@@ -21,7 +20,7 @@ const Feed = ({ edges }: Props) => (
               <Link to={edge.node.fields.categorySlug} className={styles.feed__itemMetaCategoryLink} onClick={() => gtagTrack('CategoryLink', 'click', edge.node.fields.categorySlug)} title={edge.node.frontmatter.category}>{edge.node.frontmatter.category}</Link>
             </span> */}
             <span className={styles.feed__itemMetaDivider} />
-            <time className={styles.feed__itemMetaTime} dateTime={moment(edge.node.frontmatter.date).fromNow()} itemProp="datePublished">{moment(edge.node.frontmatter.date).fromNow()}</time>
+            <time className={styles.feed__itemMetaTime} dateTime={ new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}>{ new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</time>
         </div>
         <h2 className={styles.feed__itemTitle} itemProp="headline">
           <Link className={styles.feed__itemTitleLink} to={edge.node.fields.slug} onClick={() => gtagTrack('PostLink', 'click', edge.node.fields.slug, { title: edge.node.frontmatter.title })} title={edge.node.frontmatter.title} itemProp="url">{edge.node.frontmatter.title}</Link>

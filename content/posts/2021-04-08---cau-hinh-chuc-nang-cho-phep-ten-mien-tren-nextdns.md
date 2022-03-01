@@ -11,7 +11,6 @@ tags:
 slug: /series/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns
 thumbnail: "/images/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns.png"
 description: NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ khách hàng cho phép và không cho phép một tên miền bất kì được hoạt động và không được hoạt động.
-fbCommentUrl: /series/cau-hinh-chuc-nang-cho-phep-ten-mien-tren-nextdns
 ---
 
 NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ khách hàng cho phép và không cho phép một tên miền bất kì được hoạt động và không được hoạt động.

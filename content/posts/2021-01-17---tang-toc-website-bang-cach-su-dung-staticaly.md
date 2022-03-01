@@ -13,7 +13,6 @@ tags:
 slug: /2021/01/tang-toc-website-bang-cach-su-dung-staticaly
 thumbnail: "/images/tang-toc-website-bang-cach-su-dung-staticaly.jpg"
 description: Staticaly là một trang hoàn toàn miễn phí nó giúp bạn đẩy các file tĩnh như ảnh,font,css và js của bạn thông qua URL cdn của họ.
-fbCommentUrl: /2021/01/tang-toc-website-bang-cach-su-dung-staticaly
 ---
 
 Theo mình tìm hiểu thì Staticaly khá hay khi sử dụng nó bạn sẽ cảm thấy website của mình nhanh hơn.

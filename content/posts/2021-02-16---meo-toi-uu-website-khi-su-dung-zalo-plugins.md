@@ -11,7 +11,6 @@ tags:
 slug: /2021/02/meo-toi-uu-website-khi-su-dung-zalo-plugins
 thumbnail: "/images/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg"
 description: Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.
-fbCommentUrl: /2021/02/meo-toi-uu-website-khi-su-dung-zalo-plugins
 ---
 
 Ở bài viết trước mình đã hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook Plugins, ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.

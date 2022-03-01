@@ -12,7 +12,6 @@ tags:
 slug: /2021/01/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san
 thumbnail: "/images/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san.jpg"
 description: Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty.
-fbCommentUrl: /2021/01/tai-sao-theme-tren-wordpress-khong-duoc-toi-uu-san
 ---
 
 Có thể nói mã nguồn WordPress giờ quá phổ biến với người dùng từ các dự án từ bé đến lớn như bán hàng, blog, dịch vụ, công ty.

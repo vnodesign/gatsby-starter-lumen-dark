@@ -15,7 +15,6 @@ tags:
 slug: /2021/03/list-of-awesome-css-frameworks
 thumbnail: "/images/css-frameworks.jpg"
 description: In this article I would like to share with you the list of CSS Frameworks that support Website design.
-fbCommentUrl: /2021/03/list-of-awesome-css-frameworks
 featured: true
 priceCurrency: VNĐ
 price: 0.00

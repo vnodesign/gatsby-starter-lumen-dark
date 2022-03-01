@@ -7,8 +7,7 @@ module.exports = {
   subtitle: 'Specialist site to share knowledge of VPS and Website',
   description: 'Specialist page sharing knowledge related to VPS development and Website',
   copyright: '© tuanducdesign.com',
-  facebookComment: {
-    active: true,
+  facebookApp: {
     appId: 294587991860787,
   },
   postsPerPage: 10,

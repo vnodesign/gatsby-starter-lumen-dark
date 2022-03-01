@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
 import { MarkdownRemark } from '../types';
+import { useLocation } from '@gatsbyjs/reach-router';
 
 type Props = {
   data: {
@@ -15,10 +16,10 @@ type Props = {
 
 const PostTemplate = ({ data }: Props) => {
   const { url, title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { title: postTitle, description: postDescription = '', thumbnail, fbCommentUrl, featured, priceCurrency, price, ratingValue, ratingCount, reviewCount, worstRating, bestRating } = data.markdownRemark.frontmatter;
+  const { title: postTitle, description: postDescription = '', thumbnail, featured, priceCurrency, price, ratingValue, ratingCount, reviewCount, worstRating, bestRating } = data.markdownRemark.frontmatter;
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
   const thumbnailUrl = thumbnail;
-  const posturl = fbCommentUrl;
+  const posturl = useLocation();
   const showschema = featured || false;
   const schemaRatingPriceCurrency = priceCurrency || 0;
   const schemaRatingPrice = price || 0;
@@ -43,7 +44,7 @@ const PostTemplate = ({ data }: Props) => {
               "@type": "Offer",
               "priceCurrency": "${schemaRatingPriceCurrency}",
               "price": "${schemaRatingPrice}",
-              "url": "${url}${posturl}"
+              "url": "${posturl.pathname}"
             },
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -57,7 +58,7 @@ const PostTemplate = ({ data }: Props) => {
           </script>
           ) }
           <meta property="og:type" content="article"/>
-          <meta property="og:url" content={`${url}${posturl}`}/>
+          <meta property="og:url" content={`${posturl.pathname}`}/>
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </Helmet>
       <Post post={data.markdownRemark} />
@@ -81,7 +82,6 @@ export const query = graphql`
         description
         tags
         title
-        fbCommentUrl
         thumbnail
         featured
         priceCurrency

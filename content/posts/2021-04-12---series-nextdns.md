@@ -10,7 +10,6 @@ tags:
 slug: /series-nextdns
 thumbnail: "/images/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg"
 description: Series hướng dẫn sử dụng NextDNS từ A đến Z. Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS.
-fbCommentUrl: /series-nextdns
 featured: true
 priceCurrency: VNĐ
 price: 0.00

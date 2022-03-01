@@ -34,7 +34,6 @@ export type Node = {
     thumbnail?: string,
     category?: string,
     authorName?: string,
-    fbCommentUrl?: string,
     tags?: string[],
     title: string,
     featured: string,

@@ -14,7 +14,6 @@ tags:
 slug: /series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns
 thumbnail: "/images/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png"
 description: Trong bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS
-fbCommentUrl: /series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns
 ---
 
 Ở bài viết trước mình đã hướng dẫn các bạn cấu hình và sử dụng NextDNS trên Modem, ở bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS nhé.

@@ -11,7 +11,6 @@ tags:
 slug: /2021/01/lazyload-twitter-publish
 thumbnail: "/images/lazyload-twitter-publish.jpg"
 description: Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Twitter để tải trang nhanh hơn.
-fbCommentUrl: /2021/01/lazyload-twitter-publish
 ---
 
 Ở bài viết trước thì chúng ta đã tìm hiểu về cách Lazy Load Facebook Customize Chat. Thì ở bài viết tiếp theo mình sẽ hướng dẫn các bạn cách Lazyload Twitter Publish để trang tải nhanh hơn.

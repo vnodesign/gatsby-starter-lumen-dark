@@ -10,11 +10,7 @@ tags:
 - Mongodb
 slug: "/series/kiem-tra-phien-ban-mongodb"
 thumbnail: "/images/cai-dat-mongodb-tren-ubuntu.jpeg"
-description: Để kiểm tra Phiên bản MongoDB, bạn có thể quan sát thông báo khởi động
-  Mongo Daemon, thông báo khởi động Mongo Shell hoặc chạy lệnh db.version() trong
-  Mongo Shell.
-fbCommentUrl: "/series/kiem-tra-phien-ban-mongodb"
-
+description: Để kiểm tra Phiên bản MongoDB, bạn có thể quan sát thông báo khởi động Mongo Daemon, thông báo khởi động Mongo Shell hoặc chạy lệnh db.version() trong Mongo Shell.
 ---
 Để kiểm tra Phiên bản MongoDB, bạn có thể quan sát thông báo khởi động Mongo Daemon, thông báo khởi động Mongo Shell hoặc chạy lệnh db.version() trong Mongo Shell.
 

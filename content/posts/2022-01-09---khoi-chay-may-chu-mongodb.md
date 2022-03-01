@@ -9,9 +9,7 @@ tags:
 - Windows
 slug: "/series/khoi-chay-may-chu-mongodb"
 thumbnail: "/images/khoi-chay-may-chu-mongodb.png"
-description: Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon
-  (mongod.exe) có trong thư mục bin của Thư mục cài đặt MongoDB.
-fbCommentUrl: "/series/khoi-chay-may-chu-mongodb"
+description: Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon (mongod.exe) có trong thư mục bin của Thư mục cài đặt MongoDB.
 
 ---
 Để khởi động MongoDB Server trong Windows, hãy khởi động Mongo Daemon (mongod.exe) có trong thư mục bin của Thư mục cài đặt MongoDB.

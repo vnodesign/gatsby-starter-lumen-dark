@@ -11,7 +11,6 @@ tags:
 slug: /2021/01/lazyload-google-fonts
 thumbnail: "/images/lazyload-google-fonts.jpg"
 description: Tiếp nối các chuỗi Lazyload scripts bên ba thì hôm nay mình xin hướng dẫn các bạn cách Lazyload khi sử dụng Google Fonts.
-fbCommentUrl: /2021/01/lazyload-google-fonts
 ---
 
 Tiếp nối các chuỗi Lazyload scripts bên ba thì hôm nay mình xin hướng dẫn các bạn cách Lazyload khi sử dụng Google Fonts.

@@ -29,8 +29,7 @@ const useSiteMetadata = () => {
             subtitle
             description
             copyright
-            facebookComment {
-              active
+            facebookApp {
               appId
             }
           }

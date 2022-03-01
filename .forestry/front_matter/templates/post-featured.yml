@@ -54,11 +54,6 @@ fields:
     schema:
       format: markdown
     required: true
-- type: text
-  name: fbCommentUrl
-  label: fbCommentUrl
-  config:
-    required: true
 - type: boolean
   name: featured
   label: featured

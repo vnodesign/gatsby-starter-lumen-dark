@@ -13,7 +13,6 @@ thumbnail: "/images/khoi-chay-may-chu-mongodb.png"
 description: Mongo shell là một giao diện JavaScript tương tác với MongoDB Server
   được sử dụng để thực hiện các hoạt động quản trị và dữ liệu. Trong bài viết này
   tìm hiểu cách sử dụng của nó.
-fbCommentUrl: "/series/mongo-shell"
 
 ---
 **Mongo shell** là một giao diện JavaScript tương tác với MongoDB Server được sử dụng để thực hiện các hoạt động quản trị và dữ liệu. Trong bài viết này tìm hiểu cách sử dụng của nó.

@@ -11,7 +11,6 @@ tags:
 slug: /2021/01/cach-toi-uu-website-khi-su-dung-css-va-javascript
 thumbnail: "/images/cach-toi-uu-website-khi-su-dung-css-va-javascript.jpg"
 description: Khi lập trình một trang web chắc hẳn bạn đã từng nghe đến thuật toán tối ưu CSS và Javascript rồi chứ.
-fbCommentUrl: /2021/01/cach-toi-uu-website-khi-su-dung-css-va-javascript
 ---
 
 Khi lập trình một trang web chắc hẳn bạn đã từng nghe đến thuật toán tối ưu CSS và Javascript rồi chứ? Bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn tối ưu CSS và Javascript trên từng trang.

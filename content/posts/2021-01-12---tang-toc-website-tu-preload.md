@@ -12,7 +12,6 @@ tags:
 slug: /2021/01/tang-toc-website-tu-preload
 thumbnail: "/images/speed-website-from-preload.jpg"
 description: Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng.
-fbCommentUrl: /2021/01/tang-toc-website-tu-preload
 ---
 
 Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng. Bạn có thể áp dụng nội dung trong bài viết này với các đoạn script của bài trước để tối ưu thêm.

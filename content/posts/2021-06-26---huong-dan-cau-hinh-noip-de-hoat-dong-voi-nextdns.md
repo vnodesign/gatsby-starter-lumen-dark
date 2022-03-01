@@ -10,7 +10,6 @@ tags:
 slug: /series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns
 thumbnail: "/images/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.png"
 description: Để tự động cập nhật địa chỉ IP khi sử dụng NextDNS, thì bạn cần cấu hình DDNS trên cả router và NextDNS.
-fbCommentUrl: /series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns
 ---
 
 Sau hơn hai tháng tìm hiểu về NextDNS và chức năng DDNS trên NextDNS, hôm nay mình sẽ hướng dẫn các bạn cách cấu hình NOIP để hoạt động với NextDNS.

@@ -12,7 +12,7 @@ module.exports = {
     subtitle: siteConfig.subtitle,
     description: siteConfig.description,
     copyright: siteConfig.copyright,
-    facebookComment: siteConfig.facebookComment,
+    facebookApp: siteConfig.facebookApp,
     menu: siteConfig.menu,
     author: siteConfig.author,
   },
