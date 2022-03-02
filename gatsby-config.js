@@ -204,6 +204,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-minify-classnames',
-    'gatsby-plugin-purgecss'
   ],
 };
