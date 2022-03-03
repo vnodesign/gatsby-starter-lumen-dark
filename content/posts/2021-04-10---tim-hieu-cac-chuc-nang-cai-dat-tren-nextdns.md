@@ -8,7 +8,7 @@ tags:
   - Settings
   - NextDNS
 slug: /series/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns
-thumbnail: "/images/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/tim-hieu-cac-chuc-nang-cai-dat-tren-nextdns.png"
 description: Để tăng thêm mức độ bảo mật cho tài khoản và mạng của mình, thì bạn cần phải tìm hiểu thêm về các chức năng cài đặt trên NextDNS.
 ---
 

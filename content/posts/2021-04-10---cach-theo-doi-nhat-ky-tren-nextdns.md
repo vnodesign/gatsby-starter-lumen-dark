@@ -17,7 +17,7 @@ tags:
   - Traffic Destination
   - NextDNS
 slug: /series/cach-theo-doi-nhat-ky-tren-nextdns
-thumbnail: "/images/cach-theo-doi-nhat-ky-tren-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cach-theo-doi-nhat-ky-tren-nextdns.png"
 description: Cách theo dõi nhật ký trên NextDNS để kiểm tra xem tên miền nào đang bị chặn, và nguyên nhân nó bị chặn do trình chặn quảng cáo nào.
 ---
 

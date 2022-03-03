@@ -9,7 +9,7 @@ tags:
   - Adblock
   - NextDNS
 slug: /series/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns
-thumbnail: "/images/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cau-hinh-cac-chuc-nang-rieng-tu-tren-nextdns.png"
 description: Trong bài viết này mình sẽ hướng dẫn các bạn cách cấu hình các chức năng riêng tư trên NextDNS.
 ---
 

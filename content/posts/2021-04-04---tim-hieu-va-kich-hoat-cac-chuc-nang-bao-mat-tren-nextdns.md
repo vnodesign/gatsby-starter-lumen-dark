@@ -12,7 +12,7 @@ tags:
   - dgas
   - nrds
 slug: /series/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns
-thumbnail: "/images/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/tim-hieu-va-kich-hoat-cac-chuc-nang-bao-mat-tren-nextdns.png"
 description: Trong bài viết kế tiếp này chúng ta cùng tìm hiểu và kích hoạt các chức năng bảo mật trên NextDNS
 ---
 

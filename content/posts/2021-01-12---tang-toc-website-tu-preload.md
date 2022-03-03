@@ -10,7 +10,7 @@ tags:
   - Script
   - Style
 slug: /2021/01/tang-toc-website-tu-preload
-thumbnail: "/images/speed-website-from-preload.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/speed-website-from-preload.jpg"
 description: Ngày nay khi tối ưu website thì người ta quan trọng nhất là tốc độ và trải nghiệm của người dùng.
 ---
 

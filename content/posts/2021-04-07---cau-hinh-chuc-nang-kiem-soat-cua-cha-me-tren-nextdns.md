@@ -12,7 +12,7 @@ tags:
   - Apps
   - NextDNS
 slug: /series/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns
-thumbnail: "/images/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cau-hinh-chuc-nang-kiem-soat-cua-cha-me-tren-nextdns.png"
 description: Cấu hình chức năng kiểm soát của cha mẹ trên NextDNS. Bảo vệ con cái của bạn dễ dàng hơn với các cấu hình từ cơ bản tới nâng cao.
 ---
 

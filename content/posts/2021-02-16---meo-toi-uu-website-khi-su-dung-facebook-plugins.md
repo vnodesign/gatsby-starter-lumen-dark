@@ -9,7 +9,7 @@ tags:
   - Facebook
   - Javascript
 slug: /2021/02/meo-toi-uu-website-khi-su-dung-facebook-plugins
-thumbnail: "/images/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/meo-toi-uu-website-khi-su-dung-facebook-plugins.jpg"
 description: Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Facebook plugins.
 ---
 

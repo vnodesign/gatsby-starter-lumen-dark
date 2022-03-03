@@ -10,7 +10,7 @@ tags:
   - Iframe
   - Javascript
 slug: /2021/01/lazyload-image-va-iframe
-thumbnail: "/images/lazyload-image-va-iframe.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/lazyload-image-va-iframe.jpg"
 description: Ở các bài trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload image và iframe.
 ---
 

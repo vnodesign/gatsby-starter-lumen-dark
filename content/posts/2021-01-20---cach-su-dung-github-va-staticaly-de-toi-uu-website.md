@@ -9,7 +9,7 @@ tags:
   - Staticaly
   - CDN
 slug: /2021/01/cach-su-dung-github-va-staticaly-de-toi-uu-website
-thumbnail: "/images/cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cach-su-dung-github-va-staticaly-de-toi-uu-website.jpg"
 description: Ở bài trước mình đã hướng dẫn các bạn tăng tốc Website bằng cách sử dụng Staticaly nhưng ở mức độ cơ bản.
 ---
 

@@ -9,7 +9,7 @@ tags:
   - Zalo
   - Javascript
 slug: /2021/01/lazyload-zalo-plugins
-thumbnail: "/images/lazyload-zalo-plugins.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/lazyload-zalo-plugins.jpg"
 description: Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Zalo để tải trang nhanh hơn.
 ---
 

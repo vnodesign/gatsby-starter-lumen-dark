@@ -9,7 +9,7 @@ tags:
   - Ads
   - NextDNS
 slug: /series/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns
-thumbnail: "/images/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cau-hinh-chuc-nang-chan-ten-mien-tren-nextdns.png"
 description: NextDNS ngày càng trở nên phổ biến hơn đặc biết là hỗ trợ chặn và bỏ chặn một tên miền bất kì. Bạn có thể chặn các domain có chứa quảng cáo như Google và MGID.
 ---
 

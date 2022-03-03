@@ -8,7 +8,7 @@ tags:
   - NextDNS
   - Network
 slug: /series-nextdns
-thumbnail: "/images/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg"
 description: Series hướng dẫn sử dụng NextDNS từ A đến Z. Từ cài đặt NextDNS đến cấu hình NextDNS và cuối cùng là bảo vệ gia đình bằng NextDNS.
 featured: true
 priceCurrency: VNĐ

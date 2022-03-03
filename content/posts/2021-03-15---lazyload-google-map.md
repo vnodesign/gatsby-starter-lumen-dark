@@ -11,7 +11,7 @@ tags:
   - Requests
   - Javascript
 slug: /2021/03/lazyload-google-map
-thumbnail: "/images/google-maps-logo.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/google-maps-logo.png"
 description: Google Map có thể nói là cái quan trọng nhất với mọi người, không chỉ tìm kiếm vị trí, mà nó còn là cái giúp mọi người tìm kiếm đến doanh nghiệp của bạn.
 ---
 

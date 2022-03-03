@@ -9,7 +9,7 @@ tags:
   - Adsense
   - Javascript
 slug: /2021/02/lazyload-google-adsense
-thumbnail: "/images/lazyload-google-adsense.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/lazyload-google-adsense.jpg"
 description: Đây là bài viết thứ sáu liên quan đến Lazyload mà mình viết. Ở bài viết này mình sẽ hướng dẫn các bạn sử dụng Lazyload với Google Adsense.
 ---
 

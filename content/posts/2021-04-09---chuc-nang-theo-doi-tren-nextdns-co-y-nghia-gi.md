@@ -17,7 +17,7 @@ tags:
   - Traffic Destination
   - NextDNS
 slug: /series/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi
-thumbnail: "/images/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/chuc-nang-theo-doi-tren-nextdns-co-y-nghia-gi.png"
 description: Với chức năng theo dõi trên NextDNS, thì bạn có thể theo dõi được các hoạt động đang diễn ra trên các trình chặn quảng cáo mà bạn đã thêm.
 ---
 

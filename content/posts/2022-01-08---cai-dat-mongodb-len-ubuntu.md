@@ -8,7 +8,7 @@ tags:
 - Ubuntu
 - MongoDB
 slug: "/series/cai-dat-mongodb-len-ubuntu"
-thumbnail: "/images/cai-dat-mongodb-tren-ubuntu.jpeg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cai-dat-mongodb-tren-ubuntu.jpeg"
 description: Trong bài viết này chúng ta cùng tìm hiểu về cách cài đặt MongoDB lên hệ điều hành Ubuntu
 ---
 Trong bài viết này chúng ta cùng tìm hiểu về cách cài đặt MongoDB lên hệ điều hành Ubuntu.

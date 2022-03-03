@@ -9,7 +9,7 @@ tags:
   - Javascript
   - PageSpeed
 slug: /2021/01/cach-toi-uu-website-khi-su-dung-css-va-javascript
-thumbnail: "/images/cach-toi-uu-website-khi-su-dung-css-va-javascript.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cach-toi-uu-website-khi-su-dung-css-va-javascript.jpg"
 description: Khi lập trình một trang web chắc hẳn bạn đã từng nghe đến thuật toán tối ưu CSS và Javascript rồi chứ.
 ---
 

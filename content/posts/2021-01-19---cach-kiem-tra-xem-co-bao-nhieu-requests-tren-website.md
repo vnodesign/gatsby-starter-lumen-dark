@@ -8,7 +8,7 @@ tags:
   - Requests
   - Tăng tốc
 slug: /2021/01/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website
-thumbnail: "/images/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/cach-kiem-tra-xem-co-bao-nhieu-requests-tren-website.jpg"
 description: Về vấn đề dùng nhiều scripts bên ba thì bạn sẽ không tránh khỏi được có nhiều requests được tải cùng website.
 ---
 

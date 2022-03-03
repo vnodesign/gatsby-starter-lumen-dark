@@ -12,7 +12,7 @@ tags:
   - Javascript
   - DeferJS
 slug: /2021/02/bo-ba-thu-vien-than-thanh-giup-website-toi-uu
-thumbnail: "/images/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/bo-ba-thu-vien-than-thanh-giup-website-toi-uu.jpg"
 description: Bài viết ngày hôm nay mình sẽ tổng hợp bộ ba thư viện thần thánh giúp website của bạn tối ưu hơn.
 ---
 

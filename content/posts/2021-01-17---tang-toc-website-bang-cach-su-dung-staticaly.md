@@ -11,7 +11,7 @@ tags:
   - Style
   - JavaScript
 slug: /2021/01/tang-toc-website-bang-cach-su-dung-staticaly
-thumbnail: "/images/tang-toc-website-bang-cach-su-dung-staticaly.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/tang-toc-website-bang-cach-su-dung-staticaly.jpg"
 description: Staticaly là một trang hoàn toàn miễn phí nó giúp bạn đẩy các file tĩnh như ảnh,font,css và js của bạn thông qua URL cdn của họ.
 ---
 

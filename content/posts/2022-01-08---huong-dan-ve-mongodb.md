@@ -7,7 +7,7 @@ category: MongoDB
 tags:
 - Mongodb
 slug: "/series/huong-dan-ve-mongodb"
-thumbnail: "/images/huong-dan-ve-mongodb.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/huong-dan-ve-mongodb.png"
 description: Tìm hiểu MongoDB từ những điều cơ bản bao gồm Mongo Shell, Cài đặt MongoDB, MongoDB Script, Tài liệu và Hoạt động CRUD của chúng, Bộ sưu tập, Cơ sở dữ liệu, Bộ bản sao, Tìm kiếm văn bản, MapReduce, Sao lưu và Khôi phục, MongoDB giao tiếp với Java, Kotlin, NodeJS; Câu hỏi phỏng vấn MongoDB, v.v.
 ---
 Trong Hướng dẫn về MongoDB này, chúng ta sẽ tìm hiểu các kiến thức cơ bản về MongoDB, các thao tác CRUD khác nhau có sẵn cho tài liệu, Collection và Cơ sở dữ liệu MongoDB và tích hợp MongoDB với các ứng dụng được phát triển bằng các ngôn ngữ lập trình như Java, Python, Kotlin, Java Script, v.v. Chúng ta cũng sẽ thực hiện thông qua các ví dụ MongoDB khác nhau để hiểu rõ hơn về cú pháp.

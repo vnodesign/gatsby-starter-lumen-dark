@@ -8,7 +8,7 @@ tags:
   - NOIP
   - NextDNS
 slug: /series/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns
-thumbnail: "/images/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/huong-dan-cau-hinh-noip-de-hoat-dong-voi-nextdns.png"
 description: Để tự động cập nhật địa chỉ IP khi sử dụng NextDNS, thì bạn cần cấu hình DDNS trên cả router và NextDNS.
 ---
 

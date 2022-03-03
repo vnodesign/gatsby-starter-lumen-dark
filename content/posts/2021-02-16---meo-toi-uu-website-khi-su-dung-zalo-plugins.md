@@ -9,7 +9,7 @@ tags:
   - Zalo
   - Javascript
 slug: /2021/02/meo-toi-uu-website-khi-su-dung-zalo-plugins
-thumbnail: "/images/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/meo-toi-uu-website-khi-su-dung-zalo-plugins.jpg"
 description: Ở bài viết ngày hôm nay mình sẽ hướng dẫn các bạn cách tối ưu website khi sử dụng Zalo plugins.
 ---
 

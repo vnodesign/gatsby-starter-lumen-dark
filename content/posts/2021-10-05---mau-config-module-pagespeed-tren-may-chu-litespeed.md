@@ -12,7 +12,7 @@ tags:
   - Debian
   - CentOS
 slug: /snippet/mau-config-module-pagespeed-tren-may-chu-litespeed
-thumbnail: "/images/mau-config-module-pagespeed-tren-may-chu-litespeed.png"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/mau-config-module-pagespeed-tren-may-chu-litespeed.png"
 description: Trong snippet này mình sẽ chia sẻ với các bạn mẫu config Module PageSpeed trên máy chủ LiteSpeed.
 ---
 

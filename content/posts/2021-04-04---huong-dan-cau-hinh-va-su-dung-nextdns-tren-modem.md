@@ -20,7 +20,7 @@ tags:
   - Routers
   - NextDNS
 slug: /series/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem
-thumbnail: "/images/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/huong-dan-cau-hinh-va-su-dung-nextdns-tren-modem.jpeg"
 description: NextDNS là sự lựa chọn hoàn hảo để thay thế DNS Cloudflare, Khi sử dụng NextDNS thì bạn sẽ được bảo vệ toàn diện từ các chức năng nổi bật của NextDNS.
 ---
 

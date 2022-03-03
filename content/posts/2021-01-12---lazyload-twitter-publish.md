@@ -9,7 +9,7 @@ tags:
   - Twitter
   - Javascript
 slug: /2021/01/lazyload-twitter-publish
-thumbnail: "/images/lazyload-twitter-publish.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/lazyload-twitter-publish.jpg"
 description: Trong bài viết tiếp theo của ngày hôm nay mình sẽ hướng dẫn các bạn cách Lazyload script của Twitter để tải trang nhanh hơn.
 ---
 

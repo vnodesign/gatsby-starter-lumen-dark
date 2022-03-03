@@ -13,7 +13,7 @@ tags:
   - LESS
   - PostCSS
 slug: /2021/03/list-of-awesome-css-frameworks
-thumbnail: "/images/css-frameworks.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/css-frameworks.jpg"
 description: In this article I would like to share with you the list of CSS Frameworks that support Website design.
 featured: true
 priceCurrency: VNĐ

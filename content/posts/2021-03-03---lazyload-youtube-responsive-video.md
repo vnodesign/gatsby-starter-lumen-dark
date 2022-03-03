@@ -10,7 +10,7 @@ tags:
   - Responsive
   - Javascript
 slug: /2021/03/lazyload-youtube-va-responsive-video
-thumbnail: "/images/lazyload-youtube-va-responsive-video.jpg"
+thumbnail: "https://frontend.tuanducdesign.com/assets/blogs/images/lazyload-youtube-va-responsive-video.jpg"
 description: Ở các bài viết trước mình đã hướng dẫn các bạn lazyload các script, ở bài này mình sẽ hướng dẫn cách lazyload Youtube và responsive video.
 ---
 
