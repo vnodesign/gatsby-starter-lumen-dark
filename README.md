@@ -2,7 +2,7 @@
 
 ```bash
 
-git clone https://github.com/vnodesign/tuanducdesign.com && cd tuanducdesign.com
+git clone https://github.com/vnodesign/gatsby-starter-lumen-dark && cd gatsby-starter-lumen-dark
 yarn
 yarn develop
 
