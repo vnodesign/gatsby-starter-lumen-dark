@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://tuanducdesign.com',
+  url: 'https://tuanducdesigncom.gatsbyjs.io',
   pathPrefix: '/',
   title: 'Tuan Duc Design',
   subtitle: 'Specialist site to share knowledge of VPS and Website',
@@ -11,7 +11,7 @@ module.exports = {
     appId: 294587991860787,
   },
   postsPerPage: 10,
-  googleAnalyticsId: 'UA-175649416-1',
+  googleAnalyticsId: '',
   menu: [
     {
       label: 'Blog',
@@ -36,14 +36,6 @@ module.exports = {
     {
       label: 'Tags',
       path: '/tags'
-    },
-    {
-      label: 'Service',
-      path: 'https://service.tuanducdesign.com'
-    },
-    {
-      label: 'About',
-      path: 'https://me.tuanducdesign.com'
     }
   ],
   author: {
